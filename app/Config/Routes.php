@@ -6,8 +6,10 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 // Routes Untuk Admin
+$routes->get('/himatik/index.php/himatikadmin/dashboard', 'AdminMain::index');
 $routes->get('/himatikadmin', 'AdminMain::index');
-$routes->get('/himatikadmin/login', 'AdminMain::login');
+$routes->get('/himatikadmin/login', 'LoginController::index');  
+$routes->post('/himatikadmin/login', 'LoginController::login'); 
 $routes->get('/himatikadmin/dashboard', 'AdminMain::index'); 
 $routes->get('/himatikadmin/admin', 'AdminMain::admin');
 $routes->get('/himatikadmin/pengurus', 'AdminMain::pengurus');

@@ -7,16 +7,23 @@ use CodeIgniter\Model;
 class AdminModel extends Model
 {
     protected $table = 'admin';
-    protected $primaryKey = 'id_admin';
-    protected $allowedFields = ['id_admin', 'password']; 
+    protected $allowedFields = ['username', 'password'];
 
-    public function checkLogin($id_admin, $password)
+    /**
+     * Verifikasi username dan password dari database.
+     *
+     * @param string $username Username dari user yang ingin login.
+     * @param string $password Password yang diinput oleh user.
+     * @return mixed Returns array jika sukses, false jika gagal.
+     */
+    public function validateAdmin($username, $password)
     {
-        $admin = $this->where('id_admin', $id_admin)->first();
+        $user = $this->where('username', $username)->first();
 
-        if ($admin) {
-            if (password_verify($password, $admin['password'])) {
-                return $admin;
+        if ($user) {
+            // Cek password menggunakan password_verify jika password di database diencrypt menggunakan bcrypt
+            if (password_verify($password, $user['password'])) {
+                return $user;
             }
         }
 

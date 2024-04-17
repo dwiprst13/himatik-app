@@ -8,6 +8,7 @@ class AdminMain extends BaseController
     {
         echo view('templates/header');
         echo view('admin/login');
+        return redirect()->to('/AdminMain/index');
     }
     public function index()
     {

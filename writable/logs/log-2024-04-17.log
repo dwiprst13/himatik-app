@@ -270,3 +270,71 @@ in APPPATH\Views\templates\sidebar.php on line 14.
 12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 13 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
 14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-04-17 13:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-17 13:26:51 --> BadMethodCallException: Call to undefined method App\Models\AdminModel::validateAdmin
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\LoginController.php(21): CodeIgniter\Model->__call('validateAdmin', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-04-17 13:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-17 13:29:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'himatik_db', 3306, '', 0)
+#1 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\himatik-app\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\himatik-app\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\himatik-app\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\himatik-app\app\Models\AdminModel.php(21): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\himatik-app\app\Controllers\LoginController.php(21): App\Models\AdminModel->validateAdmin('dwiprast13', '122001')
+#8 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(941): App\Controllers\LoginController->login()
+#9 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#10 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\himatik-app\public\index.php(81): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\himatik-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\himatik-app\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\himatik-app\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\himatik-app\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\himatik-app\app\Models\AdminModel.php(21): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\himatik-app\app\Controllers\LoginController.php(21): App\Models\AdminModel->validateAdmin('dwiprast13', '122001')
+#7 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(941): App\Controllers\LoginController->login()
+#8 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\himatik-app\public\index.php(81): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\himatik-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-04-17 13:29:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\AdminModel.php(21): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\LoginController.php(21): App\Models\AdminModel->validateAdmin('dwiprast13', '122001')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-04-17 13:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-17 13:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-17 13:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-17 13:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-17 13:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-17 13:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-17 13:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-17 13:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-17 13:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

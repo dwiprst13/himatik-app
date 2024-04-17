@@ -4,6 +4,11 @@ namespace App\Controllers;
 
 class AdminMain extends BaseController
 {
+    public function login()
+    {
+        echo view('templates/header');
+        echo view('admin/login');
+    }
     public function index()
     {
         echo view('templates/header');

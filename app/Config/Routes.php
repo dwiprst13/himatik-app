@@ -7,6 +7,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 // Routes Untuk Admin
 $routes->get('/himatikadmin', 'AdminMain::index');
+$routes->get('/himatikadmin/login', 'AdminMain::login');
 $routes->get('/himatikadmin/dashboard', 'AdminMain::index'); 
 $routes->get('/himatikadmin/admin', 'AdminMain::admin');
 $routes->get('/himatikadmin/pengurus', 'AdminMain::pengurus');

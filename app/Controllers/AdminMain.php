@@ -2,7 +2,12 @@
 
 namespace App\Controllers;
 
-class AdminMain extends BaseController
+use App\Models\AdminModel;
+use App\Models\ArtikelModel;
+use App\Models\PengurusModel;
+use App\Models\GaleriModel;
+
+class AdminMain extends ProtectedController
 {
     public function login()
     {
@@ -12,9 +17,22 @@ class AdminMain extends BaseController
     }
     public function index()
     {
+        $adminModel = new AdminModel();
+        $artikelModel = new ArtikelModel();
+        $pengurusModel = new PengurusModel();
+        $galeriModel = new GaleriModel();
+        $totalAdmin = $adminModel->countTotalAdmin();
+        $totalArtikel = $artikelModel->countTotalArtikel();
+        $totalPengurus = $pengurusModel->countTotalPengurus();
+        $totalGaleri = $galeriModel->countTotalGaleri();
         echo view('templates/header');
         echo view('templates/sidebar');
-        echo view('admin/dashboard');
+        echo view('admin/dashboard', [
+            'totalAdmin' => $totalAdmin,
+            'totalArtikel' => $totalArtikel,
+            'totalPengurus' => $totalPengurus,
+            'totalGaleri' => $totalGaleri
+        ]);
     }
     public function admin()
     {

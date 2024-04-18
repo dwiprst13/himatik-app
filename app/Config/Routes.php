@@ -5,11 +5,16 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+// Routes Untuk Admin Auth
+$routes->get('/himatikadmin/login', 'Login::index');
+$routes->post('/himatikadmin/login', 'Login::auth');
+$routes->post('/himatikadmin/logout', 'Login::logout');
+$routes->get('/himatikadmin/login/lupapassword', 'Login::lupapassword');
+
+
 // Routes Untuk Admin
 $routes->get('/himatik/index.php/himatikadmin/dashboard', 'AdminMain::index');
 $routes->get('/himatikadmin', 'AdminMain::index');
-$routes->get('/himatikadmin/login', 'LoginController::index');  
-$routes->post('/himatikadmin/login', 'LoginController::login'); 
 $routes->get('/himatikadmin/dashboard', 'AdminMain::index'); 
 $routes->get('/himatikadmin/admin', 'AdminMain::admin');
 $routes->get('/himatikadmin/pengurus', 'AdminMain::pengurus');

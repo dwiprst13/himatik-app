@@ -21,12 +21,20 @@ class AdminModel extends Model
         $user = $this->where('username', $username)->first();
 
         if ($user) {
-            // Cek password menggunakan password_verify jika password di database diencrypt menggunakan bcrypt
             if (password_verify($password, $user['password'])) {
                 return $user;
             }
         }
 
         return false;
+    }
+    /**
+     * Menghitung total admin yang terdaftar.
+     *
+     * @return int Jumlah total admin.
+     */
+    public function countTotalAdmin()
+    {
+        return $this->countAll();
     }
 }

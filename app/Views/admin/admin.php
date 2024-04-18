@@ -20,15 +20,15 @@
                         <td class="p-3 text-center px-5"><?php echo $admin['nim']; ?></td>
                         <td class="p-3 text-center px-5"><?php echo $admin['role']; ?></td>
                         <td class="px-5">
-                            <div class=" flex gap-5 justify-between w-[70%] mx-auto">
-                                <form action="" method="get">
+                            <div class="flex items-center justify-between">
+                                <form action="" method="get" class="h-full mt-3">
                                     <input type="hidden" name="page" value="edit_admin">
                                     <input type="hidden" name="id_admin" value="<?= $admin['id_admin'] ?>">
-                                    <button type="submit" class="mr-3 text-sm bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Edit</button>
+                                    <button type="submit" class="text-sm bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded-md focus:outline-none focus:shadow-outline">Edit</button>
                                 </form>
-                                <form action="" method="post" onsubmit="return confirm('Apakah kamu yakin ingin menghapus data ini?');">
+                                <form action="" method="post" class="h-full mt-3" onsubmit="return confirm('Apakah kamu yakin ingin menghapus data ini?');">
                                     <input type="hidden" name="id_admin" value="<?= $admin['id_admin'] ?>">
-                                    <button type="submit" name="hapus" class="mr-3 text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Hapus</button>
+                                    <button type="submit" name="hapus" class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded-md focus:outline-none focus:shadow-outline">Hapus</button>
                                 </form>
                             </div>
                         </td>

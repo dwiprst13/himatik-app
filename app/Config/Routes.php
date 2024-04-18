@@ -16,7 +16,7 @@ $routes->get('/himatikadmin/login/lupapassword', 'Login::lupapassword');
 $routes->get('/himatik/index.php/himatikadmin/dashboard', 'AdminMain::index');
 $routes->get('/himatikadmin', 'AdminMain::index');
 $routes->get('/himatikadmin/dashboard', 'AdminMain::index'); 
-$routes->get('/himatikadmin/admin', 'AdminMain::admin');
+$routes->get('/himatikadmin/admin', 'AdminMain::getAllAdmin');
 $routes->get('/himatikadmin/pengurus', 'AdminMain::pengurus');
 $routes->get('/himatikadmin/divisi', 'AdminMain::divisi');
 $routes->get('/himatikadmin/proker', 'AdminMain::proker');

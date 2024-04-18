@@ -40,6 +40,15 @@ class AdminMain extends ProtectedController
         echo view('templates/sidebar');
         echo view('admin/admin');
     }
+    public function getAllAdmin()
+    {
+        $adminModel = new AdminModel();
+        $allAdmin = $adminModel->getAllAdmin();
+        echo view('templates/header');
+        echo view('templates/sidebar');
+        echo view('admin/admin', ['allAdmin' => $allAdmin]);
+    }
+
     public function pengurus()
     {
         echo view('templates/header');

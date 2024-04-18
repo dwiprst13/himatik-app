@@ -11,35 +11,50 @@
             </button>
         </div>
     </div>
-    <form method="post">
+    <form action="/himatikadmin/admin/tambahadmin" method="post">
+        <?php
+        if (session()->getFlashdata('error')) {
+        ?>
+            <div class="">
+                <div class="flex text-white justify-center rounded-md w-[70%] bg-red-400 px-3 py-1 text-sm font-semibold leading-6 shadow-sm mx-auto">
+                    <?php echo session()->getFlashdata('error') ?>
+                </div>
+            </div>
+        <?php
+        }
+        ?>
         <input type="hidden" name="id_admin">
         <div class=" grid grid-cols-8 ">
             <div class="space-y-6 col-span-4 p-5">
                 <div>
                     <label for="name" class="block text-sm font-medium leading-6">Nama:</label>
-                    <input type="text" name="name" placeholder="Masukakan Nama" required class="block w-full rounded-md  p-3 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
+                    <input type="text" name="name" placeholder="Masukakan Nama" required value="<?= old('name') ?>" class="block w-full rounded-md p-2 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
+                </div>
+                <div>
+                    <label for="username" class="block text-sm font-medium leading-6">Nama Pengguna:</label>
+                    <input type="text" name="username" placeholder="Masukakan Nama" required value="<?= old('username') ?>" class="block w-full rounded-md p-2 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
                 </div>
                 <div>
                     <label for="nim" class="block text-sm font-medium leading-6">Nim:</label>
-                    <input type="text" name="nim" placeholder="Masukakan NIM" required class="block w-full rounded-md  p-3 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
+                    <input type="number" name="nim" placeholder="Masukakan NIM" required value="<?= old('nim') ?>" class="block w-full rounded-md p-2 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
                 </div>
                 <div>
                     <label for="email" class="block text-sm font-medium leading-6">Email:</label>
-                    <input type="text" name="email" placeholder="Masukakan Email" required class="block w-full rounded-md  p-3 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
+                    <input type="email" name="email" placeholder="Masukakan Email" required value="<?= old('email') ?>" class="block w-full rounded-md p-2 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
                 </div>
             </div>
             <div class="space-y-6 col-span-4 p-5">
                 <div>
                     <label for="password" class="block text-sm font-medium leading-6">Kata Sandi:</label>
-                    <input type="text" name="password" placeholder="Masukkan Kata Sandi" class="block w-full rounded-md  p-3 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
+                    <input type="password" name="password" placeholder="Masukkan Kata Sandi" class="block w-full rounded-md  p-2 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
                 </div>
                 <div>
                     <label for="password" class="block text-sm font-medium leading-6">Ulangi Kata Sandi:</label>
-                    <input type="text" name="password" placeholder="Masukkan Ulang Kata Sandi" class="block w-full rounded-md  p-3 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
+                    <input type="password" name="repassword" placeholder="Masukkan Ulang Kata Sandi" class="block w-full rounded-md  p-2 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
                 </div>
                 <div>
                     <label for="role" class="block text-sm font-medium leading-6">Role:</label>
-                    <select id="role" name="role" class="block w-full rounded-md p-3 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    <select id="role" name="role" value="<?= old('role') ?>"  class="block w-full rounded-md p-2 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                         <option value="SuperAdmin">SuperAdmin</option>
                         <option value="Admin">Admin</option>
                         <option value="Jurnalis">Jurnalis</option>

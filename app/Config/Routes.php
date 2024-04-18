@@ -26,6 +26,7 @@ $routes->get('/himatikadmin/pesan', 'Admins\AdminMain::pesan');
 
 // Routes Untuk Admin => Tambah
 $routes->get('/himatikadmin/admin/tambahadmin', 'Admins\AdminTambah::tambahAdmin');
+$routes->post('/himatikadmin/admin/tambahadmin', 'Admins\AdminTambah::simpanAdmin');
 // $routes->get('/himatikadmin/pengurus/tambahpengurus', 'AdminTambah::pengurus');
 // $routes->get('/himatikadmin/proker/tambahproker', 'AdminTambah::proker');
 // $routes->get('/himatikadmin/galeri/tambahgaleri', 'AdminTambah::galeri');

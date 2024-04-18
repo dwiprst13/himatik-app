@@ -1,10 +1,23 @@
 <?php
+
 namespace App\Models;
+
 use CodeIgniter\Model;
+
 class AdminModel extends Model
 {
     protected $table = 'admin';
-    protected $allowedFields = ['username', 'password'];
+    protected $primaryKey = 'id_admin';
+    protected $allowedFields = [
+        'username',
+        'password',
+        'nama',
+        'nim', 
+        'email', 
+        'password', 
+        'repassword', 
+        'role'
+    ];
     /**
      * @param string $username Username dari user yang ingin login.
      * @param string $password Password yang diinput oleh user.
@@ -32,7 +45,6 @@ class AdminModel extends Model
     {
         return $this->where('id_admin', $id)->first();
     }
-
     public function editAdmin($id)
     {
         return $this->update($id);
@@ -41,5 +53,4 @@ class AdminModel extends Model
     {
         return $this->delete($id);
     }
-
 }

@@ -28,5 +28,18 @@ class AdminModel extends Model
     {
         return $this->findAll();
     }
+    public function getAdminById($id)
+    {
+        return $this->where('id_admin', $id)->first();
+    }
+
+    public function editAdmin($id)
+    {
+        return $this->update($id);
+    }
+    public function deleteAdmin($id)
+    {
+        return $this->delete($id);
+    }
 
 }

@@ -27,7 +27,7 @@ $isLoggedIn = $session->get('logged_in');
             </a>
         </li>
         <li class="mb-2 group">
-            <a href="/himatikadmin/pengurus" class="flex items-center py-2 px-4 text-gray-300 rounded-md <?= ($path == 'himatikadmin/pengurus' ? 'bg-blue-600 text-white' : 'text-gray-300 hover:bg-gray-500 hover:text-gray-100 ') ?>">
+            <a href="/himatikadmin/pengurus" class="flex items-center py-2 px-4 text-gray-300 rounded-md <?php echo ($path == 'himatikadmin/pengurus' || $path == 'himatikadmin/pengurus/tambahadmin') ? 'bg-blue-600 text-white' : 'text-gray-300 hover:bg-gray-500 hover:text-gray-100 '; ?>">
                 <i class="ri-settings-2-line mr-3 text-lg"></i>
                 <span class="text-sm">Pengurus</span>
             </a>

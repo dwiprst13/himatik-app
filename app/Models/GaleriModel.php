@@ -6,13 +6,13 @@ use CodeIgniter\Model;
 
 class GaleriModel extends Model
 {
-    protected $table = 'artikel';
+    protected $table = 'galeri';
     /**
      * Menghitung total admin yang terdaftar.
      *
      * @return int Jumlah total artikel
      */
-    public function countTotalArtikel()
+    public function countTotalGaleri()
     {
         return $this->countAll();
     }

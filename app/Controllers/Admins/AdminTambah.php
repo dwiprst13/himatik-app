@@ -4,6 +4,7 @@ namespace App\Controllers\Admins;
 
 use App\Models\AdminModel;
 use App\Models\PengurusModel;
+use App\Models\ArtikelModel;
 use App\Controllers\ProtectedController;
 
 class AdminTambah extends ProtectedController
@@ -93,5 +94,36 @@ class AdminTambah extends ProtectedController
         echo view('templates/header');
         echo view('templates/sidebar');
         echo view('admin/tambah/tambahartikel');
+    }
+    public function simpanArtikel()
+    {
+        $artikel = new ArtikelModel();
+
+        $foto = $this->request->getFile('foto');
+        if ($foto->isValid() && !$foto->hasMoved()) {
+            $uploadDir = FCPATH . 'uploads/artikel/';
+            if (!is_dir($uploadDir)) {
+                mkdir($uploadDir, 0777, true);
+            }
+
+            $fotoName = $foto->getRandomName();
+            $foto->move($uploadDir, $fotoName);
+            $fotoPath = 'uploads/artikel/' . $fotoName;
+        } else {
+            $fotoPath = '';
+        }
+
+        $data = [
+            'judul' => $this->request->getVar('judul'),
+            'content' => $this->request->getVar('isi'),
+            'tag' => $this->request->getVar('tag'),
+            'status' => $this->request->getVar('status'),
+            'author' => $this->request->getVar('author'),
+            'img' => $fotoPath
+        ];
+
+        $artikel->save($data);
+        session()->setFlashdata('success', 'Berhasil menambahkan artikel baru');
+        return redirect('himatikadmin/artikel');
     }
 }

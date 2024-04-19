@@ -17,11 +17,11 @@ $nama_admin = $session->get('nama_admin');
                 </button>
             </div>
         </div>
-        <form class="w-[90%] flex flex-col mx-auto pb-32" action="" method="POST" enctype="multipart/form-data" autocomplete="off">
+        <form class="w-[90%] flex flex-col mx-auto pb-32" action="/himatikadmin/artikel/tambahartikel" method="POST" enctype="multipart/form-data" autocomplete="off">
             <div class="">
                 <div class="space-y-6">
                     <input type="hidden" name="author" id="author" value="<?php $nama_admin ?>">
-                    <input type="hidden" name="author" id="author" value="">
+                    <input type="hidden" name="author" id="author" value="12">
                     <div class="mx-auto w-[100%]">
                         <label for="judul" class="block text-sm   font-medium leading-6 ">Judul</label>
                         <div class="mt-2">

@@ -1,7 +1,7 @@
 <div class="ml-64 h-screen">
     <div class="p-4 flex">
         <h1 class="text-xl">
-            Daftar Admin
+            Tambah Admin
         </h1>
     </div>
     <div class=" px-3 py-4 flex justify-between">

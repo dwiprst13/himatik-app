@@ -10,7 +10,7 @@ $isLoggedIn = $session->get('logged_in');
 ?>
 <div class="fixed left-0 top-0 w-64 h-full bg-gray-900 p-4 z-50 sidebar-menu transition-transform">
     <a href="#" class="flex items-center pb-4 border-b border-b-gray-800">
-        <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover">
+        <img src="/himatik.png" alt="" class="w-8 h-8 rounded object-cover">
         <span class="text-lg font-bold text-white ml-3">HimatikAdmin</span>
     </a>
     <ul class="mt-4">
@@ -62,6 +62,12 @@ $isLoggedIn = $session->get('logged_in');
                 <span class="text-sm">Pesan</span>
             </a>
         </li>
+        <li class="mb-2 group">
+            <a href="" class="flex items-center py-2 px-4 text-gray-400 rounded-md hover:bg-gray-500">
+                <i class="ri-settings-2-line mr-3 text-lg"></i>
+                <span class="text-sm">User</span>
+            </a>
+        </li>
     </ul>
     <div>
         <form action="/himatikadmin/logout" method="post" class="logout-form py-16">
@@ -71,7 +77,7 @@ $isLoggedIn = $session->get('logged_in');
     </div>
 </div>
 <script>
-    const logoutForm = document.querySelector('.logout-form'); 
+    const logoutForm = document.querySelector('.logout-form');
     logoutForm.addEventListener('submit', function(event) {
         if (!confirm('Apakah Anda yakin ingin logout?')) {
             event.preventDefault();

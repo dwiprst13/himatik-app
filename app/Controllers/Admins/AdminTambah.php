@@ -3,6 +3,7 @@
 namespace App\Controllers\Admins;
 
 use App\Models\AdminModel;
+use App\Models\PengurusModel;
 use App\Controllers\ProtectedController;
 
 class AdminTambah extends ProtectedController
@@ -42,9 +43,49 @@ class AdminTambah extends ProtectedController
             'password' => $hashedPassword,
         ];
         $admin->save($data);
+        session()->setFlashdata('success', 'Berhasil menambahkan Admin baru');
         return redirect('himatikadmin/admin');
     }
 
+    public function tambahPengurus()
+    {
+        echo view('templates/header');
+        echo view('templates/sidebar');
+        echo view('admin/tambah/tambahpengurus');
+    }
 
+    public function simpanPengurus()
+    {
+        $pengurus = new PengurusModel();
 
+        $foto = $this->request->getFile('fotopengurus');
+        if ($foto->isValid() && !$foto->hasMoved()) {
+            $uploadDir = FCPATH . 'uploads/fotopengurus/';
+            if (!is_dir($uploadDir)) {
+                mkdir($uploadDir, 0777, true);
+            }
+
+            $fotoName = $foto->getRandomName();
+            $foto->move($uploadDir, $fotoName);
+            $fotoPath = 'uploads/fotopengurus/' . $fotoName;
+        } else {
+            $fotoPath = '';
+        }
+
+        $data = [
+            'nama' => $this->request->getVar('name'),
+            'nama_panggilan' => $this->request->getVar('panggilan'),
+            'nim' => $this->request->getVar('nim'),
+            'divisi' => $this->request->getVar('divisi'),
+            'posisi' => $this->request->getVar('posisi'),
+            'ig_link' => $this->request->getVar('ig_link'),
+            'linkedin_link' => $this->request->getVar('linkedin_link'),
+            'github_link' => $this->request->getVar('github_link'),
+            'foto' => $fotoPath
+        ];
+
+        $pengurus->save($data);
+        session()->setFlashdata('success', 'Berhasil menambahkan pengurus baru');
+        return redirect('himatikadmin/pengurus');
+    }
 }

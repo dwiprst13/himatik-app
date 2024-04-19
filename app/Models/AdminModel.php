@@ -18,6 +18,7 @@ class AdminModel extends Model
         'repassword', 
         'role'
     ];
+    
     /**
      * @param string $username Username dari user yang ingin login.
      * @param string $password Password yang diinput oleh user.
@@ -45,9 +46,9 @@ class AdminModel extends Model
     {
         return $this->where('id_admin', $id)->first();
     }
-    public function editAdmin($id)
+    public function editAdmin($id, array $data)
     {
-        return $this->update($id);
+        return $this->update($id, $data);
     }
     public function deleteAdmin($id)
     {

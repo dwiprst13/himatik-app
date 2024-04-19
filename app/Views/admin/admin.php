@@ -1,3 +1,10 @@
+<?php if (session()->has('success')) : ?>
+    <script>
+        window.addEventListener('load', function() {
+            alert("<?php echo session('success'); ?>");
+        });
+    </script>
+<?php endif; ?>
 <div class="ml-64 h-screen">
     <div class="p-4 flex">
         <h1 class="text-xl">
@@ -11,7 +18,7 @@
             </button>
         </div>
         <div class="mb-3">
-            <form method="post" class="flex mb-4 flex w-full flex-wrap ">
+            <form method="post" class="flex mb-4 w-full flex-wrap ">
                 <input type="search" class="mx-auto m-0 -mr-0.5 block min-w-0 flex-auto rounded-l border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6]  outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-blackfocus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-gray-600 dark:focus:border-primary" placeholder="Search" aria-label="Search" aria-describedby="button-addon1" />
                 <button class=" flex items-center rounded-r bg-blue-500 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg" type="button" id="button-addon1" data-te-ripple-init data-te-ripple-color="light">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
@@ -46,8 +53,7 @@
                                 <form action="/himatikadmin/admin/editadmin/<?= $admin['id_admin'] ?>" method="get" class="h-full mt-3">
                                     <button type="submit" class="text-sm bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded-md focus:outline-none focus:shadow-outline">Edit</button>
                                 </form>
-                                <form action="" method="post" class="h-full mt-3" onsubmit="return confirm('Apakah kamu yakin ingin menghapus data ini?');">
-                                    <input type="hidden" name="id_admin" value="<?= $admin['id_admin'] ?>">
+                                <form action="/himatikadmin/admin/deleteadmin/<?= $admin['id_admin'] ?>" method="get" class="h-full mt-3" onsubmit="return confirm('Apakah kamu yakin ingin menghapus data ini?');">
                                     <button type="submit" name="hapus" class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded-md focus:outline-none focus:shadow-outline">Hapus</button>
                                 </form>
                             </div>

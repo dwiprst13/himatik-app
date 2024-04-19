@@ -56,6 +56,14 @@ class AdminMain extends ProtectedController
         echo view('templates/sidebar');
         echo view('admin/pengurus');
     }
+    public function getAllPengurus()
+    {
+        $pengurusModel = new PengurusModel();
+        $allPengurus = $pengurusModel->getAllPengurus();
+        echo view('templates/header');
+        echo view('templates/sidebar');
+        echo view('admin/pengurus', ['allPengurus' => $allPengurus]);
+    }
     public function divisi()
     {
         echo view('templates/header');

@@ -11,35 +11,61 @@
             </button>
         </div>
     </div>
-    <form method="post">
+    <?php
+    if (session()->getFlashdata('error')) {
+    ?>
+        <div class="">
+            <div class="flex text-white justify-center rounded-md w-[70%] bg-red-400 px-3 py-1 text-sm font-semibold leading-6 shadow-sm mx-auto">
+                <?php echo session()->getFlashdata('error') ?>
+            </div>
+        </div>
+    <?php
+    }
+    ?>
+    <?php
+    if (session()->getFlashdata('success')) {
+    ?>
+        <div class="">
+            <div class="flex text-white justify-center rounded-md w-[70%] bg-red-400 px-3 py-1 text-sm font-semibold leading-6 shadow-sm mx-auto">
+                <?php echo session()->getFlashdata('success') ?>
+            </div>
+        </div>
+    <?php
+    }
+    ?>
+    <form action="/himatikadmin/admin/editadmin" method="post">
         <input type="hidden" name="id_admin" value="<?= $admin['id_admin'] ?>">
         <div class=" grid grid-cols-8 ">
             <div class="space-y-6 col-span-4 p-5">
                 <div>
                     <label for="new_name" class="block text-sm font-medium leading-6">Nama:</label>
-                    <input type="text" name="new_name" value="<?= $admin['nama'] ?>" required class="block w-full rounded-md  p-3 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
+                    <input type="text" name="new_name" value="<?= $admin['nama'] ?>" required class="block w-full rounded-md  p-2 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
+                </div>
+                <div>
+                    <label for="new_name" class="block text-sm font-medium leading-6">Nama Pengguna:</label>
+                    <input type="text" name="new_username" value="<?= $admin['username'] ?>" required class="block w-full rounded-md  p-2 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
                 </div>
                 <div>
                     <label for="new_nim" class="block text-sm font-medium leading-6">Nim:</label>
-                    <input type="text" name="new_nim" value="<?= $admin['nim'] ?>" required class="block w-full rounded-md  p-3 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
+                    <input type="text" name="new_nim" value="<?= $admin['nim'] ?>" required class="block w-full rounded-md  p-2 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
                 </div>
                 <div>
                     <label for="new_email" class="block text-sm font-medium leading-6">Email:</label>
-                    <input type="text" name="new_email" value="<?= $admin['email'] ?>" required class="block w-full rounded-md  p-3 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
+                    <input type="text" name="new_email" value="<?= $admin['email'] ?>" required class="block w-full rounded-md  p-2 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
                 </div>
             </div>
             <div class="space-y-6 col-span-4 p-5">
                 <div>
                     <label for="new_password" class="block text-sm font-medium leading-6">Kata Sandi Baru:</label>
-                    <input type="text" name="new_password" placeholder="Masukkan Password Baru?" class="block w-full rounded-md  p-3 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
+                    <input type="text" name="new_password" placeholder="Masukkan Password Baru?" class="block w-full rounded-md  p-2 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
                 </div>
                 <div>
                     <label for="new_password" class="block text-sm font-medium leading-6">Ulangi Kata Sandi Baru:</label>
-                    <input type="text" name="new_password" placeholder="Masukkan Password Baru?" class="block w-full rounded-md  p-3 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
+                    <input type="text" name="new_repassword" placeholder="Masukkan Password Baru?" class="block w-full rounded-md  p-2 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><br>
                 </div>
                 <div>
                     <label for="new_role" class="block text-sm font-medium leading-6">Role:</label>
-                    <select id="new_role" name="new_role" class="block w-full rounded-md p-3 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    <select id="new_role" name="new_role" class="block w-full rounded-md p-2 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                         <option value="SuperAdmin" <?= $admin['role'] == 'SuperAdmin' ? 'selected' : '' ?>>SuperAdmin</option>
                         <option value="Admin" <?= $admin['role'] == 'Admin' ? 'selected' : '' ?>>Admin</option>
                         <option value="Jurnalis" <?= $admin['role'] == 'Jurnalis' ? 'selected' : '' ?>>Jurnalis</option>

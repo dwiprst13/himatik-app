@@ -8,7 +8,7 @@
         <div class=" px-3 py-4 flex justify-between">
             <div>
                 <button class="mr-3 text-sm bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">
-                    <a href="admin/tambahadmin">Tambah</a>
+                    <a href="artikel/tambahartikel">Tambah</a>
                 </button>
             </div>
             <div class="mb-3">
@@ -22,5 +22,45 @@
                 </form>
             </div>
         </div>
+        <section class="w-[100%] mx-auto ">
+            <div class="container w-[90%] gap-5 columns-3 mx-auto grid px-4">
+                <table class="w-full text-md table-auto bg-white shadow-md rounded mb-4">
+                    <tbody>
+                        <tr class="px-3 border-b bg-gray-500 text-white rounded-md">
+                            <th class="text-center p-3 px-5">Id</th>
+                            <th class="text-center p-3 px-5">Judul</th>
+                            <th class="text-center p-3 px-5">Gambar</th>
+                            <th class="text-center p-3 px-5">Penulis</th>
+                            <th class="text-center p-3 px-5">Tanggal</th>
+                            <th class="text-center p-3 px-5">Status</th>
+                            <th class="text-center p-3 px-5">Edited</th>
+                            <th class="text-center p-3 px-5">Tag</th>
+                            <th class="text-center p-3 px-5">Edit</th>
+                        </tr>
+                        <?php foreach ($allArtikel as $artikel) : ?>
+                            <tr class="px-3 border-b bg-gray-100">
+                                <td class="p-3 text-center px-5"><?php echo $artikel['id_artikel']; ?></td>
+                                <td class="p-3 text-center px-5"><?php echo $artikel['judul']; ?></td>
+                                <td class="p-3 text-center px-5">
+                                    <img src="<?php echo $artikel['img']; ?>" alt="" class="h-10">
+                                </td>
+                                <td class="p-3 text-center px-5"><?php echo $artikel['author']; ?></td>
+                                <td class="p-3 text-center px-5"><?php echo $artikel['date']; ?></td>
+                                <td class="p-3 text-center px-5"><?php echo $artikel['status']; ?></td>
+                                <td class="p-3 text-center px-5"><?php echo $artikel['edited']; ?></td>
+                                <td class="p-3 text-center px-5"><?php echo $artikel['tag']; ?></td>
+                                <td class="p-3 text-center px-5">
+                                    <a href="?page=detail_artikel&id_artikel=">
+                                        Detail
+                                    </a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </section>
     </div>
 </body>

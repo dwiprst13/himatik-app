@@ -16,7 +16,7 @@
         <div class=" px-3 py-4 flex justify-between">
             <div>
                 <button class="mr-3 text-sm bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">
-                    <a href="admin/tambahpengurus">Tambah</a>
+                    <a href="pengurus/tambahpengurus">Tambah</a>
                 </button>
             </div>
             <div class="mb-3">

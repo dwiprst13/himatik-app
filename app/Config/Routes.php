@@ -20,15 +20,17 @@ $routes->get('/himatikadmin/pengurus', 'Admins\AdminMain::getAllPengurus');
 $routes->get('/himatikadmin/divisi', 'Admins\AdminMain::divisi');
 $routes->get('/himatikadmin/proker', 'Admins\AdminMain::proker');
 $routes->get('/himatikadmin/galeri', 'Admins\AdminMain::galeri');
-$routes->get('/himatikadmin/artikel', 'Admins\AdminMain::artikel'); 
+$routes->get('/himatikadmin/artikel', 'Admins\AdminMain::getAllArtikel'); 
 $routes->get('/himatikadmin/info', 'Admins\AdminMain::info'); 
 $routes->get('/himatikadmin/pesan', 'Admins\AdminMain::pesan');
 
 // Routes Untuk Admin => Tambah
 $routes->get('/himatikadmin/admin/tambahadmin', 'Admins\AdminTambah::tambahAdmin');
 $routes->post('/himatikadmin/admin/tambahadmin', 'Admins\AdminTambah::simpanAdmin');
-$routes->get('/himatikadmin/admin/tambahpengurus', 'Admins\AdminTambah::tambahPengurus');
-$routes->post('/himatikadmin/admin/tambahpengurus', 'Admins\AdminTambah::simpanPengurus');
+$routes->get('/himatikadmin/pengurus/tambahpengurus', 'Admins\AdminTambah::tambahPengurus');
+$routes->post('/himatikadmin/pengurus/tambahpengurus', 'Admins\AdminTambah::simpanPengurus');
+$routes->get('/himatikadmin/artikel/tambahartikel', 'Admins\AdminTambah::tambahArtikel');
+$routes->post('/himatikadmin/artikel/tambahartikel', 'Admins\AdminTambah::simpanArtikel');
 // $routes->get('/himatikadmin/proker/tambahproker', 'AdminTambah::proker');
 // $routes->get('/himatikadmin/galeri/tambahgaleri', 'AdminTambah::galeri');
 // $routes->get('/himatikadmin/artikel/tambahartikel', 'AdminTambah::artikel');

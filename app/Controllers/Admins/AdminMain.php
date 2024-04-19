@@ -5,8 +5,8 @@ namespace App\Controllers\Admins;
 use App\Controllers\ProtectedController;
 use App\Models\AdminModel;
 use App\Models\ArtikelModel;
-use App\Models\PengurusModel;
 use App\Models\GaleriModel;
+use App\Models\PengurusModel;
 
 class AdminMain extends ProtectedController
 {
@@ -81,6 +81,14 @@ class AdminMain extends ProtectedController
         echo view('templates/header');
         echo view('templates/sidebar');
         echo view('admin/artikel');
+    }
+    public function getAllArtikel()
+    {
+        $artikelModel = new ArtikelModel();
+        $allArtikel = $artikelModel->getAllArtikel();
+        echo view('templates/header');
+        echo view('templates/sidebar');
+        echo view('admin/artikel', ['allArtikel' => $allArtikel]);
     }
     public function galeri()
     {

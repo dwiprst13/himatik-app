@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="sm:mx-auto sm:w-full ">
-        <form class="space-y-6" action="/himatikadmin/admin/tambahpengurus" method="POST" enctype="multipart/form-data">
+        <form class="space-y-6" action="/himatikadmin/pengurus/tambahpengurus" method="POST" enctype="multipart/form-data">
             <div class=" grid grid-cols-8 ">
                 <div class="space-y-6 col-span-4 p-5">
                     <div class=" ">

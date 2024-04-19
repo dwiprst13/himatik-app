@@ -88,4 +88,10 @@ class AdminTambah extends ProtectedController
         session()->setFlashdata('success', 'Berhasil menambahkan pengurus baru');
         return redirect('himatikadmin/pengurus');
     }
+    public function tambahArtikel()
+    {
+        echo view('templates/header');
+        echo view('templates/sidebar');
+        echo view('admin/tambah/tambahartikel');
+    }
 }

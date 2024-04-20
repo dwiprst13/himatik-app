@@ -14,3 +14,7 @@ CodeIgniter 4
 
 
 MVC cacad
+
+Bingung dengan struktur COdeIgniter 4?
+
+Buka https://codeigniter4.github.io/userguide/ 

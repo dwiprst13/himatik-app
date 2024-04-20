@@ -39,27 +39,25 @@
                         </tr>
                         <?php foreach ($allArtikel as $artikel) : ?>
                             <tr class="px-3 border-b bg-gray-100">
-                                <td class="p-3 text-center px-5"><?php echo $artikel['id_artikel']; ?></td>
-                                <td class="p-3 text-center px-5"><?php echo $artikel['judul']; ?></td>
-                                <td class="p-3 text-center px-5">
+                                <td class="p-2 text-center px-5"><?php echo $artikel['id_artikel']; ?></td>
+                                <td class="p-2 text-center px-5"><?php echo $artikel['judul']; ?></td>
+                                <td class="p-2 text-center px-5">
                                     <img src="<?php echo $artikel['img']; ?>" alt="" class="h-10">
                                 </td>
-                                <td class="p-3 text-center px-5"><?php echo $artikel['author']; ?></td>
-                                <td class="p-3 text-center px-5"><?php echo $artikel['date']; ?></td>
-                                <td class="p-3 text-center px-5"><?php echo $artikel['status']; ?></td>
-                                <td class="p-3 text-center px-5"><?php echo $artikel['edited']; ?></td>
-                                <td class="p-3 text-center px-5"><?php echo $artikel['tag']; ?></td>
-                                <td class="p-3 text-center px-5">
-                                    <a href="?page=detail_artikel&id_artikel=">
-                                        Detail
-                                    </a>
+                                <td class="p-2 text-center px-5"><?php echo $artikel['writer']; ?></td>
+                                <td class="p-2 text-center px-5"><?php echo date('d-m-Y', strtotime($artikel['date'])); ?></td>
+                                <td class="p-2 text-center px-5"><?php echo $artikel['status']; ?></td>
+                                <td class="p-2 text-center px-5"><?php echo $artikel['edited']; ?></td>
+                                <td class="p-2 text-center px-5"><?php echo $artikel['tag']; ?></td>
+                                <td class="p-2 text-center px-5">
+                                    <form action="/himatikadmin/artikel/detailartikel/<?= $artikel['id_artikel'] ?>" method="get" class="h-full">
+                                        <button type="submit" class="text-sm bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded-md focus:outline-none focus:shadow-outline">Detail</button>
+                                    </form>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>
                 </table>
-
-
             </div>
         </section>
     </div>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,4 +17,7 @@
     <title>Himatik Admin</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tiny.cloud/1/92xg6wlqw9faoyfala0uu4ysc1irr953fn9goktkphy4w1ir/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+    <meta name="title", content="HIMATIK UAA Admin Page">
+    <meta name="description", content="Halaman admin untuk website Himatik UAA">
 </head>

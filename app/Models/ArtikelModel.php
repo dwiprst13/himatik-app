@@ -14,6 +14,7 @@ class ArtikelModel extends Model
         'content',
         'tag',
         'author',
+        'writer',
         'date',
         'edited',
         'edited_by',

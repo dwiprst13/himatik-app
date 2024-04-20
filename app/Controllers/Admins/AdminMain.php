@@ -49,7 +49,6 @@ class AdminMain extends ProtectedController
         echo view('templates/sidebar');
         echo view('admin/admin', ['allAdmin' => $allAdmin]);
     }
-
     public function pengurus()
     {
         echo view('templates/header');

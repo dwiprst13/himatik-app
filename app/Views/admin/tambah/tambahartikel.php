@@ -20,8 +20,7 @@ $nama_admin = $session->get('nama_admin');
         <form class="w-[90%] flex flex-col mx-auto pb-32" action="/himatikadmin/artikel/tambahartikel" method="POST" enctype="multipart/form-data" autocomplete="off">
             <div class="">
                 <div class="space-y-6">
-                    <input type="hidden" name="author" id="author" value="<?php $nama_admin ?>">
-                    <input type="hidden" name="author" id="author" value="12">
+                    <input type="hidden" name="writer" id="writer" value="<?php $nama_admin ?>">
                     <div class="mx-auto w-[100%]">
                         <label for="judul" class="block text-sm   font-medium leading-6 ">Judul</label>
                         <div class="mt-2">
@@ -68,48 +67,6 @@ $nama_admin = $session->get('nama_admin');
             </div>
         </form>
     </div>
-    <script src="https://cdn.tiny.cloud/1/92xg6wlqw9faoyfala0uu4ysc1irr953fn9goktkphy4w1ir/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
-    <script>
-        tinymce.init({
-            selector: 'textarea#isi',
-            height: 500,
-            plugins: [
-                'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
-                'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
-                'insertdatetime', 'media', 'table', 'help', 'wordcount'
-            ],
-            toolbar: 'undo redo | blocks | ' +
-                'bold italic backcolor | alignleft aligncenter ' +
-                'alignright alignjustify | bullist numlist outdent indent | ' +
-                'removeformat | help',
-            content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }'
-        });
-
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-
-                reader.onload = function(e) {
-                    document.getElementById('img').src = e.target.result;
-                    document.getElementById('gambarText').style.display = 'none';
-                }
-
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-        document.getElementById('foto').addEventListener('change', function() {
-            readURL(this);
-        });
-
-        var currentDate = new Date();
-        var year = currentDate.getFullYear();
-        var month = ('0' + (currentDate.getMonth() + 1)).slice(-2);
-        var day = ('0' + currentDate.getDate()).slice(-2);
-        var hours = ('0' + currentDate.getHours()).slice(-2);
-        var minutes = ('0' + currentDate.getMinutes()).slice(-2);
-
-        document.getElementById('date').value = year + '-' + month + '-' + day + 'T' + hours + ':' + minutes;
-    </script>
 </body>
 
 </html>

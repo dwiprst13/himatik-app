@@ -39,11 +39,6 @@ $routes->get('/himatikadmin/galeri/editgaleri/(:num)', 'Admins\GaleriController:
 $routes->post('/himatikadmin/galeri/editgaleri/(:num)', 'Admins\GaleriController::updateGaleri/$1');
 $routes->get('/himatikadmin/galeri/deletegaleri/(:num)', 'Admins\GaleriController::deleteGaleri/$1');
 
-$routes->get('/himatikadmin/divisi', 'Admins\AdminMain::divisi');
-$routes->get('/himatikadmin/proker', 'Admins\AdminMain::proker');
-$routes->get('/himatikadmin/info', 'Admins\AdminMain::info'); 
-$routes->get('/himatikadmin/pesan', 'Admins\AdminMain::pesan');
-
 // Routes Untuk Artikel
 $routes->get('/himatikadmin/artikel', 'Admins\ArtikelController::getAllArtikel'); 
 $routes->get('/himatikadmin/artikel/tambahartikel', 'Admins\ArtikelController::tambahArtikel');
@@ -53,6 +48,15 @@ $routes->post('/himatikadmin/artikel/detailartikel/editstatus/(:num)', 'Admins\A
 $routes->get('/himatikadmin/artikel/editartikel/(:num)', 'Admins\ArtikelController::viewArtikel/$1');
 $routes->post('/himatikadmin/artikel/editartikel/(:num)', 'Admins\ArtikelController::updateArtikel/$1');
 $routes->get('/himatikadmin/artikel/deleteartikel/(:num)', 'Admins\ArtikelController::deleteArtikel/$1');
+
+// Routes Untuk Info
+$routes->get('/himatikadmin/info', 'Admins\InfoController::getAllInfo');
+$routes->get('/himatikadmin/info/tambahinfo', 'Admins\InfoController::tambahInfo');
+$routes->post('/himatikadmin/info/tambahinfo', 'Admins\InfoController::simpanInfo');
+$routes->get('/himatikadmin/info/editinfo/(:num)', 'Admins\InfoController::viewInfo/$1');
+$routes->post('/himatikadmin/info/editinfo/(:num)', 'Admins\InfoController::updateInfo/$1');
+$routes->get('/himatikadmin/info/deleteinfo/(:num)', 'Admins\InfoController::deleteInfo/$1');
+
 // $routes->get('/himatikadmin/proker/tambahproker', 'AdminTambah::proker');
 // $routes->get('/himatikadmin/galeri/tambahgaleri', 'AdminTambah::galeri');
 // $routes->get('/himatikadmin/artikel/tambahartikel', 'AdminTambah::artikel');
@@ -76,4 +80,4 @@ $routes->get('/himatikadmin/artikel/deleteartikel/(:num)', 'Admins\ArtikelContro
 // $routes->get('/himatikadmin/pesan/detailpesan/{id}', 'AdminDetail::pesan');
 
 // Routes Untuk User 
-$routes->get('/himatikuaa', 'UserMain::index');
+$routes->get('/', 'Users\UserMain::index');

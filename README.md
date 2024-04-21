@@ -10,7 +10,7 @@ CodeIgniter 4
 5. Buka terminal ketik npm run dev
 6. Buka terminal baru ketik php spark serve
 7. Buka di localhost:8080/himatikadmin/ <-- Halaman Admin -->
-8. Buka di localhost:8080/himatikuaa/ <-- Halaman User -->
+8. Buka di localhost:8080/ <-- Halaman User -->
 
 
 MVC cacad

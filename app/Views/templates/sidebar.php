@@ -8,7 +8,7 @@ $nama_admin = $session->get('nama_admin');
 $isLoggedIn = $session->get('logged_in');
 
 ?>
-<div class="fixed left-0 top-0 w-64 h-full bg-gray-900 p-4 z-50 sidebar-menu transition-transform">
+<div class="fixed left-0 top-0 w-64 h-full bg-[#072748] p-4 z-50 sidebar-menu transition-transform">
     <a href="#" class="flex items-center pb-4 border-b border-b-gray-800">
         <img src="/himatik.png" alt="" class="w-8 h-8 rounded object-cover">
         <span class="text-lg font-bold text-white ml-3">HimatikAdmin</span>
@@ -18,6 +18,12 @@ $isLoggedIn = $session->get('logged_in');
             <a href="/himatikadmin/dashboard" class="flex items-center py-2 px-4 rounded-md <?= ($path == 'himatikadmin/dashboard' ? 'bg-blue-600 text-white' : 'text-gray-300 hover:bg-gray-500 hover:text-gray-100 ') ?>">
                 <i class="ri-home-2-line mr-3 text-lg"></i>
                 <span class="text-sm">Dashboard</span>
+            </a>
+        </li>
+        <li class="mb-2 group">
+            <a href="/himatikadmin/dashboard" class="flex items-center py-2 px-4 rounded-md <?= ($path == 'himatikadmin/pengaturan' ? 'bg-blue-600 text-white' : 'text-gray-300 hover:bg-gray-500 hover:text-gray-100 ') ?>">
+                <i class="ri-home-2-line mr-3 text-lg"></i>
+                <span class="text-sm">Pengaturan Utama</span>
             </a>
         </li>
         <li class="mb-2 group ">
@@ -70,7 +76,7 @@ $isLoggedIn = $session->get('logged_in');
         </li>
     </ul>
     <div>
-        <form action="/himatikadmin/logout" method="post" class="logout-form py-16">
+        <form action="/himatikadmin/logout" method="post" class="logout-form py-8">
             <p class="text-white py-2">Halo, <?php echo $nama_admin ?></p>
             <button class="w-full bg-red-600 p-1 rounded-md text-white my-2" type="submit">Logout</button>
         </form>

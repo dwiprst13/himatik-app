@@ -21,6 +21,14 @@ class InfoModel extends Model
     {
         return $this->findAll();
     }
+    public function getLatestInfo($limit = 4)
+    {
+        return $this->db->table('info')
+        ->orderBy('id_info', 'DESC')
+        ->limit($limit)
+            ->get()
+            ->getResult();
+    }
     public function getInfoById($id)
     {
         return $this->where('id_Info', $id)->first();

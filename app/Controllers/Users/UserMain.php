@@ -16,18 +16,19 @@ class UserMain extends BaseController
         $allPengurus = $pengurusModel->getAllPengurus();
 
         $artikelModel = new ArtikelModel();
-        $allArtikel = $artikelModel->getAllArtikel();
+        $latestArtikel = $artikelModel->getLatestArtikel();
 
         $galeriModel = new GaleriModel();
-        $allGaleri = $galeriModel->getAllGaleri();
+        $latestGaleri = $galeriModel->getLatestGaleri();
+        
         echo view('templates/header_user');
         echo view('user/header');
         echo view('user/banner');
         echo view('user/about');
         echo view('user/pengurus', ['allPengurus' => $allPengurus]);
         echo view('user/info');
-        echo view('user/galeri', ['allGaleri' => $allGaleri]);
-        echo view('user/artikel', ['allArtikel' => $allArtikel]);
+        echo view('user/galeri', ['latestGaleri' => $latestGaleri]);
+        echo view('user/artikel', ['latestArtikel' => $latestArtikel]);
         echo view('user/kontak');
         echo view('user/footer');
     }

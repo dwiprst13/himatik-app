@@ -22,6 +22,15 @@ class GaleriModel extends Model
     {
         return $this->findAll();
     }
+    public function getLatestGaleri($limit = 4)
+    {
+        return $this->db->table('galeri')
+        ->orderBy('id_galeri', 'DESC')
+        ->limit($limit)
+            ->get()
+            ->getResult();
+    }
+
     public function getGaleriById($id)
     {
         return $this->where('id_galeri', $id)->first();

@@ -29,6 +29,14 @@ class ArtikelModel extends Model
     {
         return $this->findAll();
     }
+    public function getLatestArtikel($limit = 4)
+    {
+        return $this->db->table('artikel')
+        ->orderBy('id_artikel', 'DESC')
+        ->limit($limit)
+            ->get()
+            ->getResult();
+    }
     public function getArtikelById($id)
     {
         return $this->where('id_artikel', $id)->first();

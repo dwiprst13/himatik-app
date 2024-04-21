@@ -36,7 +36,7 @@ $routes->get('/himatikadmin/galeri', 'Admins\GaleriController::getAllGaleri');
 $routes->get('/himatikadmin/galeri/tambahgaleri', 'Admins\GaleriController::tambahGaleri');
 $routes->post('/himatikadmin/galeri/tambahgaleri', 'Admins\GaleriController::simpanGaleri');
 $routes->get('/himatikadmin/galeri/editgaleri/(:num)', 'Admins\GaleriController::viewGaleri/$1');
-$routes->post('/himatikadmin/galeri/editgaleri/(:num)', 'Admins\GaleriController::updateGaleri/$1');
+$routes->post('/himatikadmin/galeri/editgaleri', 'Admins\GaleriController::updateGaleri');
 $routes->get('/himatikadmin/galeri/deletegaleri/(:num)', 'Admins\GaleriController::deleteGaleri/$1');
 
 // Routes Untuk Artikel

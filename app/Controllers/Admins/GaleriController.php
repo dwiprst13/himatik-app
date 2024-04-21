@@ -50,7 +50,7 @@ class GaleriController extends ProtectedController
         session()->setFlashdata('success', 'Berhasil menambahkan galeri baru');
         return redirect('himatikadmin/galeri');
     }
-    public function viewgaleri($id)
+    public function viewGaleri($id)
     {
         $galeriModel = new galeriModel();
         $galeri = $galeriModel->getgaleriById($id);
@@ -63,7 +63,7 @@ class GaleriController extends ProtectedController
             throw new \CodeIgniter\Exceptions\PageNotFoundException("galeri with ID {$id} not found");
         }
     }
-    public function updategaleri()
+    public function updateGaleri()
     {
         $galeriModel = new galeriModel();
         $id = $this->request->getVar('id_galeri');
@@ -74,11 +74,11 @@ class GaleriController extends ProtectedController
             return redirect()->to('himatikadmin/galeri')->with('error', 'galeri tidak ditemukan.');
         }
 
-        $foto = $this->request->getFile('new_fotogaleri');
-        $fotoPath = $galeri['foto'];
+        $foto = $this->request->getFile('new_foto');
+        $fotoPath = $galeri['img'];
 
         if ($foto->isValid() && !$foto->hasMoved()) {
-            $uploadDir = FCPATH . 'uploads/fotogaleri/';
+            $uploadDir = FCPATH . 'uploads/galeri/';
             if (!is_dir($uploadDir)) {
                 mkdir($uploadDir, 0777, true);
             }
@@ -89,19 +89,13 @@ class GaleriController extends ProtectedController
 
             $fotoName = $foto->getRandomName();
             $foto->move($uploadDir, $fotoName);
-            $fotoPath = 'uploads/fotogaleri/' . $fotoName; // update dengan path baru
+            $fotoPath = 'uploads/galeri/' . $fotoName; // update dengan path baru
         }
 
         $data = [
-            'nama' => $this->request->getVar('new_name'),
-            'nama_panggilan' => $this->request->getVar('new_panggilan'),
-            'nim' => $this->request->getVar('new_nim'),
-            'divisi' => $this->request->getVar('new_divisi'),
-            'posisi' => $this->request->getVar('new_posisi'),
-            'ig_link' => $this->request->getVar('new_ig_link'),
-            'linkedin_link' => $this->request->getVar('new_linkedin_link'),
-            'github_link' => $this->request->getVar('new_github_link'),
-            'foto' => $fotoPath
+            'judul' => $this->request->getVar('new_judul'),
+            'deskripsi' => $this->request->getVar('new_deskripsi'),
+            'img' => $fotoPath
         ];
 
         $galeriModel->update($id, $data);

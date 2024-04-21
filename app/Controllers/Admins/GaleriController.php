@@ -67,7 +67,7 @@ class GaleriController extends ProtectedController
     {
         $galeriModel = new galeriModel();
         $id = $this->request->getVar('id_galeri');
-        $galeri = $galeriModel->find($id);
+        $galeri = $galeriModel->getGaleriById($id);
 
 
         if (!$galeri) {
@@ -89,7 +89,7 @@ class GaleriController extends ProtectedController
 
             $fotoName = $foto->getRandomName();
             $foto->move($uploadDir, $fotoName);
-            $fotoPath = 'uploads/galeri/' . $fotoName; // update dengan path baru
+            $fotoPath = 'uploads/galeri/' . $fotoName;
         }
 
         $data = [

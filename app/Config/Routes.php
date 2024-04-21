@@ -54,7 +54,7 @@ $routes->get('/himatikadmin/info', 'Admins\InfoController::getAllInfo');
 $routes->get('/himatikadmin/info/tambahinfo', 'Admins\InfoController::tambahInfo');
 $routes->post('/himatikadmin/info/tambahinfo', 'Admins\InfoController::simpanInfo');
 $routes->get('/himatikadmin/info/editinfo/(:num)', 'Admins\InfoController::viewInfo/$1');
-$routes->post('/himatikadmin/info/editinfo/(:num)', 'Admins\InfoController::updateInfo/$1');
+$routes->post('/himatikadmin/info/editinfo', 'Admins\InfoController::updateInfo');
 $routes->get('/himatikadmin/info/deleteinfo/(:num)', 'Admins\InfoController::deleteInfo/$1');
 
 // $routes->get('/himatikadmin/proker/tambahproker', 'AdminTambah::proker');

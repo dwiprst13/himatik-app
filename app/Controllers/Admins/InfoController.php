@@ -62,22 +62,22 @@ class InfoController extends ProtectedController
             throw new \CodeIgniter\Exceptions\PageNotFoundException("info with ID {$id} not found");
         }
     }
-    public function updateinfo()
+    public function updateInfo()
     {
         $infoModel = new infoModel();
         $id = $this->request->getVar('id_info');
-        $info = $infoModel->find($id);
+        $info = $infoModel->getInfoById($id);
 
 
         if (!$info) {
             return redirect()->to('himatikadmin/info')->with('error', 'info tidak ditemukan.');
         }
 
-        $foto = $this->request->getFile('new_fotoinfo');
-        $fotoPath = $info['foto'];
+        $foto = $this->request->getFile('new_foto');
+        $fotoPath = $info['img'];
 
         if ($foto->isValid() && !$foto->hasMoved()) {
-            $uploadDir = FCPATH . 'uploads/fotoinfo/';
+            $uploadDir = FCPATH . 'uploads/info/';
             if (!is_dir($uploadDir)) {
                 mkdir($uploadDir, 0777, true);
             }
@@ -88,26 +88,19 @@ class InfoController extends ProtectedController
 
             $fotoName = $foto->getRandomName();
             $foto->move($uploadDir, $fotoName);
-            $fotoPath = 'uploads/fotoinfo/' . $fotoName; // update dengan path baru
+            $fotoPath = 'uploads/info/' . $fotoName; 
         }
 
         $data = [
-            'nama' => $this->request->getVar('new_name'),
-            'nama_panggilan' => $this->request->getVar('new_panggilan'),
-            'nim' => $this->request->getVar('new_nim'),
-            'divisi' => $this->request->getVar('new_divisi'),
-            'posisi' => $this->request->getVar('new_posisi'),
-            'ig_link' => $this->request->getVar('new_ig_link'),
-            'linkedin_link' => $this->request->getVar('new_linkedin_link'),
-            'github_link' => $this->request->getVar('new_github_link'),
-            'foto' => $fotoPath
+            'detail' => $this->request->getVar('new_detail'),
+            'img' => $fotoPath
         ];
 
         $infoModel->update($id, $data);
         session()->setFlashdata('success', 'Berhasil memperbarui info');
         return redirect('himatikadmin/info');
     }
-    public function deleteinfo($id)
+    public function deleteInfo($id)
     {
         $infoModel = new infoModel();
         $info = $infoModel->getInfoById($id);

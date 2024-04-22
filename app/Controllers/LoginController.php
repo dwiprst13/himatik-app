@@ -41,6 +41,7 @@ class LoginController extends BaseController
                     'id_admin' => $dataAdmin['id_admin'],
                     'nama_admin' => $dataAdmin['nama'],
                     'username_admin' => $dataAdmin['username'],
+                    'role' => $dataAdmin['role'],
                     'logged_in' => TRUE
                 ];
                 $session->set($dataSesi);

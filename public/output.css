@@ -828,6 +828,10 @@ video {
   height: 100vh;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -1170,6 +1174,11 @@ video {
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
+.bg-blue-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+}
+
 .bg-clip-padding {
   background-clip: padding-box;
 }
@@ -1279,6 +1288,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1375,6 +1389,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[1\.1rem\] {
+  font-size: 1.1rem;
 }
 
 .font-bold {
@@ -1805,6 +1823,26 @@ video {
 
   .md\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:px-3 {

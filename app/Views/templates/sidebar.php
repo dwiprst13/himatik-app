@@ -5,10 +5,10 @@ $removed_path = str_replace("himatik/index.php", "", $uripath);
 $path = trim($removed_path, '/');
 $session = session();
 $nama_admin = $session->get('nama_admin');
+$role = $session->get('role');
 $isLoggedIn = $session->get('logged_in');
-
 ?>
-<div class="fixed left-0 top-0 w-64 h-full bg-[#072748] p-4 z-50 sidebar-menu transition-transform">
+<div class="fixed left-0 top-0 w-64 h-full bg-gray-900 p-4 z-50 sidebar-menu transition-transform">
     <a href="#" class="flex items-center pb-4 border-b border-b-gray-800">
         <img src="/himatik.png" alt="" class="w-8 h-8 rounded object-cover">
         <span class="text-lg font-bold text-white ml-3">HimatikAdmin</span>
@@ -20,30 +20,36 @@ $isLoggedIn = $session->get('logged_in');
                 <span class="text-sm">Dashboard</span>
             </a>
         </li>
-        <li class="mb-2 group">
-            <a href="/himatikadmin/dashboard" class="flex items-center py-2 px-4 rounded-md <?= ($path == 'himatikadmin/pengaturan' ? 'bg-blue-600 text-white' : 'text-gray-300 hover:bg-gray-500 hover:text-gray-100 ') ?>">
-                <i class="ri-home-2-line mr-3 text-lg"></i>
-                <span class="text-sm">Pengaturan Utama</span>
-            </a>
-        </li>
-        <li class="mb-2 group ">
-            <a href="/himatikadmin/admin" class="flex items-center py-2 px-4 rounded-md <?= ($path == 'himatikadmin/admin' ? 'bg-blue-600 text-white' : 'text-gray-300 hover:bg-gray-500 hover:text-gray-100 ') ?>">
-                <i class="ri-home-2-line mr-3 text-lg"></i>
-                <span class="text-sm">Admin</span>
-            </a>
-        </li>
-        <li class="mb-2 group">
-            <a href="/himatikadmin/pengurus" class="flex items-center py-2 px-4 text-gray-300 rounded-md <?php echo ($path == 'himatikadmin/pengurus' || $path == 'himatikadmin/pengurus/tambahadmin') ? 'bg-blue-600 text-white' : 'text-gray-300 hover:bg-gray-500 hover:text-gray-100 '; ?>">
-                <i class="ri-settings-2-line mr-3 text-lg"></i>
-                <span class="text-sm">Pengurus</span>
-            </a>
-        </li>
-        <li class="mb-2 group ">
-            <a href="/himatikadmin/divisi" class="flex items-center py-2 px-4 text-gray-300 rounded-md <?= ($path == 'himatikadmin/divisi' ? 'bg-blue-600 text-white' : 'text-gray-300 hover:bg-gray-500 hover:text-gray-100 ') ?>">
-                <i class="ri-home-2-line mr-3 text-lg"></i>
-                <span class="text-sm">Divisi</span>
-            </a>
-        </li>
+        <?php if ($role == 'superAdmin' || $role == 'Admin') : ?>
+            <li class="mb-2 group">
+                <a href="/himatikadmin/pengaturan" class="flex items-center py-2 px-4 rounded-md <?= ($path == 'himatikadmin/pengaturan' ? 'bg-blue-600 text-white' : 'text-gray-300 hover:bg-gray-500 hover:text-gray-100 ') ?>">
+                    <i class="ri-home-2-line mr-3 text-lg"></i>
+                    <span class="text-sm">Pengaturan Utama</span>
+                </a>
+            </li>
+        <?php endif; ?>
+        <?php if ($role == 'superAdmin') : ?>
+            <li class="mb-2 group ">
+                <a href="/himatikadmin/admin" class="flex items-center py-2 px-4 rounded-md <?= ($path == 'himatikadmin/admin' ? 'bg-blue-600 text-white' : 'text-gray-300 hover:bg-gray-500 hover:text-gray-100 ') ?>">
+                    <i class="ri-home-2-line mr-3 text-lg"></i>
+                    <span class="text-sm">Admin</span>
+                </a>
+            </li>
+        <?php endif; ?>
+        <?php if ($role == 'superAdmin' || $role == 'Admin') : ?>
+            <li class="mb-2 group">
+                <a href="/himatikadmin/pengurus" class="flex items-center py-2 px-4 text-gray-300 rounded-md <?php echo ($path == 'himatikadmin/pengurus' || $path == 'himatikadmin/pengurus/tambahadmin') ? 'bg-blue-600 text-white' : 'text-gray-300 hover:bg-gray-500 hover:text-gray-100 '; ?>">
+                    <i class="ri-settings-2-line mr-3 text-lg"></i>
+                    <span class="text-sm">Pengurus</span>
+                </a>
+            </li>
+            <li class="mb-2 group ">
+                <a href="/himatikadmin/divisi" class="flex items-center py-2 px-4 text-gray-300 rounded-md <?= ($path == 'himatikadmin/divisi' ? 'bg-blue-600 text-white' : 'text-gray-300 hover:bg-gray-500 hover:text-gray-100 ') ?>">
+                    <i class="ri-home-2-line mr-3 text-lg"></i>
+                    <span class="text-sm">Divisi</span>
+                </a>
+            </li>
+        <?php endif; ?>
         <li class="mb-2 group ">
             <a href="/himatikadmin/artikel" class="flex items-center py-2 px-4 text-gray-300 rounded-md <?= ($path == 'himatikadmin/artikel' ? 'bg-blue-600 text-white' : 'text-gray-300 hover:bg-gray-500 hover:text-gray-100 ') ?>">
                 <i class="ri-home-2-line mr-3 text-lg"></i>
@@ -68,12 +74,15 @@ $isLoggedIn = $session->get('logged_in');
                 <span class="text-sm">Pesan</span>
             </a>
         </li>
-        <li class="mb-2 group">
-            <a href="" class="flex items-center py-2 px-4 text-gray-400 rounded-md hover:bg-gray-500">
-                <i class="ri-settings-2-line mr-3 text-lg"></i>
-                <span class="text-sm">User</span>
-            </a>
-        </li>
+
+        <?php if ($role == 'superAdmin' || $role == 'Admin') : ?>
+            <li class="mb-2 group">
+                <a href="" class="flex items-center py-2 px-4 text-gray-400 rounded-md hover:bg-gray-500">
+                    <i class="ri-settings-2-line mr-3 text-lg"></i>
+                    <span class="text-sm">User</span>
+                </a>
+            </li>
+        <?php endif; ?>
     </ul>
     <div>
         <form action="/himatikadmin/logout" method="post" class="logout-form py-8">

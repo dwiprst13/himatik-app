@@ -1,21 +1,20 @@
-<div class="min-h-screen bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+<div class="hidden min-h-screen bg-gray-100 md:flex md:flex-col md:justify-center py-12 sm:px-6 lg:px-8">
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 class="mt-6 text-center text-3xl font-bold text-gray-900">
             Selamat Datang di Menu Admin Website Himatik UAA
         </h2>
     </div>
-
     <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10 space-y-6">
             <h3 class="text-center text-[1.3rem] font-semibold">Silakan masuk dengan akun anda</h3>
             <form class="space-y-6" action="" method="post">
-                <?php 
-                if (session()->getFlashdata('error')){
-                    ?>
+                <?php
+                if (session()->getFlashdata('error')) {
+                ?>
                     <div class="bg-red-600 text-white text-center rounded-md">
                         <?php echo session()->getFlashdata('error') ?>
                     </div>
-                    <?php
+                <?php
                 }
                 ?>
                 <div>
@@ -60,5 +59,12 @@
             <div class="mt-6">
             </div>
         </div>
+    </div>
+</div>
+<div class="flex md:hidden items-center text-center h-screen">
+    <div>
+        <h1 class="font-semibold">Maaf untuk kenyamanan penggunaan, Halaman Admin HIMATIK UAA tidak dapat diakses di perangkat mobile</h1>
+        <button class="bg-blue-600 rounded px-1 py-2 text-white mt-5">Buka himatikuaa.com >></button>
+        <p class="mt-2">Website Ini belum responsive, harap maklum</p>
     </div>
 </div>

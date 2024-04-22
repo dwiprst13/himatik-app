@@ -1,3 +1,11 @@
+<?php if (session()->has('success')) : ?>
+    <script>
+        window.addEventListener('load', function() {
+            alert("<?php echo session('success'); ?>");
+        });
+    </script>
+<?php endif; ?>
+
 <body>
     <div class="md:ml-64 min-h-screen transition-all main">
         <div class="p-4 flex">
@@ -42,12 +50,18 @@
                                 <td class="p-2 text-center px-5"><?php echo $artikel['id_artikel']; ?></td>
                                 <td class="p-2 text-center px-5"><?php echo $artikel['judul']; ?></td>
                                 <td class="p-2 text-center px-5">
-                                    <img src="<?php echo $artikel['img']; ?>" alt="" class="h-10">
+                                    <img src="/<?php echo $artikel['img']; ?>" alt="" class="h-10">
                                 </td>
                                 <td class="p-2 text-center px-5"><?php echo $artikel['writer']; ?></td>
                                 <td class="p-2 text-center px-5"><?php echo date('d-m-Y', strtotime($artikel['date'])); ?></td>
                                 <td class="p-2 text-center px-5"><?php echo $artikel['status']; ?></td>
-                                <td class="p-2 text-center px-5"><?php echo $artikel['edited']; ?></td>
+                                <td class="p-2 text-center px-5">
+                                    <?php if ($artikel['edited'] == '0000-00-00') {
+                                        echo '-';
+                                    } else {
+                                        echo $artikel['edited'];
+                                    } ?>
+                                </td>
                                 <td class="p-2 text-center px-5"><?php echo $artikel['tag']; ?></td>
                                 <td class="p-2 text-center px-5">
                                     <form action="/himatikadmin/artikel/detailartikel/<?= $artikel['id_artikel'] ?>" method="get" class="h-full">

@@ -1,9 +1,5 @@
 <?php
 $konten = $artikel['content'];
-// $konten = str_replace('<h2>', '<h2 style="font-size: 2rem; font-weight: bold;">', $konten);
-// $konten = str_replace('<h3>', '<h3 style="font-size: 1.4rem; font-weight: bold;">', $konten);
-// $konten = str_replace('style="background-color: #95a5a6;"', 'class="bg-gray-600 px-2  text-white"', $konten);
-// $konten = str_replace('<blockquote>', '<div class="p-2 w-full ">"', $konten);
 ?>
 <div class="ml-64 h-screen">
     <div class="p-4 flex">
@@ -56,16 +52,14 @@ $konten = $artikel['content'];
                     <form action="?page=artikel">
                         <button type="submit" class="mr-3 w-[100%] text-sm bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Kembali</button>
                     </form>
-                    <form action="" method="get">
-                        <input type="hidden" name="page" value="edit_artikel">
-                        <input type="hidden" name="id_artikel" value=" ">
+                    <form action="/himatikadmin/artikel/editartikel/<?= $artikel['id_artikel'] ?>" method="get">
                         <button type="submit" class="mr-3 w-[100%] text-sm bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Edit</button>
                     </form>
                     <form action="" method="post">
                         <input type="hidden" name="id_artikel" value=" ">
                         <button type="submit" name="unarsip" class="mr-3 w-[100%] text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Batal Arsip</button>
                     </form>
-                    <form action="" method="post" onsubmit="return confirm('Apakah kamu yakin ingin menghapus data ini?');">
+                    <form action="/himatikadmin/artikel/deleteartikel/<?= $artikel['id_artikel'] ?>" method="get" onsubmit="return confirm('Apakah kamu yakin ingin menghapus data ini?');">
                         <input type="hidden" name="id_artikel" value=" ">
                         <button type="submit" name="hapus" class="mr-3 w-[100%] text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Hapus</button>
                     </form>

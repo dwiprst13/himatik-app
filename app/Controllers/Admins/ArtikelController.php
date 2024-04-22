@@ -41,6 +41,20 @@ class ArtikelController extends ProtectedController
             throw new \CodeIgniter\Exceptions\PageNotFoundException("Admin with ID {$id} not found");
         }
     }
+    public function viewArtikel($id)
+    {
+        $artikelModel = new ArtikelModel();
+        $artikel = $artikelModel->getArtikelById($id);
+
+        if ($artikel) {
+            echo view('templates/header');
+            echo view('templates/sidebar');
+            echo view('admin/edit/editartikel', ['artikel' => $artikel]);
+            echo view('admin/tools/artikelspecialscript');
+        } else {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException("artikel with ID {$id} not found");
+        }
+    }
     public function tambahArtikel()
     {
         echo view('templates/header');
@@ -78,5 +92,23 @@ class ArtikelController extends ProtectedController
         $artikel->save($data);
         session()->setFlashdata('success', 'Berhasil menambahkan artikel baru');
         return redirect('himatikadmin/artikel');
+    }
+    public function deleteArtikel($id)
+    {
+        $artikelModel = new ArtikelModel();
+        $artikel = $artikelModel->getArtikelById($id);
+        if (!$artikel) {
+            return redirect()->to('himatikadmin/artikel')->with('error', 'Data artikel tidak ditemukan');
+        }
+        $fotoPath = $artikel['img'];
+        if (file_exists($fotoPath)) {
+            unlink($fotoPath);
+        }
+        if ($artikelModel->delete($id)) {
+            session()->setFlashdata('success', 'Data berhasil dihapus');
+        } else {
+            session()->setFlashdata('error', 'Gagal menghapus data artikel');
+        }
+        return redirect()->to('himatikadmin/artikel');
     }
 }

@@ -11,10 +11,13 @@ $nama_admin = $session->get('nama_admin');
             </h1>
         </div>
         <div class=" px-3 py-4 flex justify-between">
-            <div>
+            <div class="w-full flex justify-between">
                 <button class="mr-3 text-sm bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">
                     <a href="/himatikadmin/info">Kembali</a>
                 </button>
+                <form action="/himatikadmin/info/deleteinfo/<?= $info['id_info'] ?>" methode="get" onsubmit="return confirm('Apakah kamu yakin ingin menghapus foto ini?');">
+                    <button type="submit" name="submit" class="bg-red-600 text-white py-1 px-2 rounded">Hapus</button>
+                </form>
             </div>
         </div>
         <form class="w-[90%] flex flex-col mx-auto" action="/himatikadmin/info/editinfo" method="POST" enctype="multipart/form-data" autocomplete="off">

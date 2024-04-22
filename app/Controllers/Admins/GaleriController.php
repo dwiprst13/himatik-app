@@ -109,7 +109,7 @@ class GaleriController extends ProtectedController
         if (!$galeri) {
             return redirect()->to('himatikadmin/galeri')->with('error', 'Data galeri tidak ditemukan');
         }
-        $fotoPath = $galeri['foto'];
+        $fotoPath = $galeri['img'];
         if (file_exists($fotoPath)) {
             unlink($fotoPath);
         }

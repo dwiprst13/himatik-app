@@ -20,7 +20,8 @@ $nama_admin = $session->get('nama_admin');
         <form class="w-[90%] flex flex-col mx-auto pb-32" action="/himatikadmin/artikel/tambahartikel" method="POST" enctype="multipart/form-data" autocomplete="off">
             <div class="">
                 <div class="space-y-6">
-                    <input type="hidden" name="writer" id="writer" value="<?php $nama_admin ?>">
+                    <input type="hidden" name="writer" id="writer" value="<?php echo $nama_admin ?>">
+                    <p><?php echo $nama_admin ?></p>
                     <div class="mx-auto w-[100%]">
                         <label for="judul" class="block text-sm   font-medium leading-6 ">Judul</label>
                         <div class="mt-2">

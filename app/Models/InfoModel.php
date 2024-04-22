@@ -9,6 +9,7 @@ class InfoModel extends Model
     protected $table = 'info';
     protected $primaryKey = 'id_info';
     protected $allowedFields = [
+        'id_info',
         'img',
         'detail'
     ];

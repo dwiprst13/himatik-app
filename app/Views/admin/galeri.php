@@ -1,3 +1,11 @@
+<?php if (session()->has('success')) : ?>
+    <script>
+        window.addEventListener('load', function() {
+            alert("<?php echo session('success'); ?>");
+        });
+    </script>
+<?php endif; ?>
+
 <body>
     <div class="md:ml-64 min-h-screen transition-all main">
         <div class="p-4 flex">

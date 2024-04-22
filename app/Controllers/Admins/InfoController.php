@@ -92,6 +92,7 @@ class InfoController extends ProtectedController
         }
 
         $data = [
+            'id_info' => $this->request->$id,
             'detail' => $this->request->getVar('new_detail'),
             'img' => $fotoPath
         ];
@@ -102,12 +103,12 @@ class InfoController extends ProtectedController
     }
     public function deleteInfo($id)
     {
-        $infoModel = new infoModel();
+        $infoModel = new InfoModel();
         $info = $infoModel->getInfoById($id);
         if (!$info) {
             return redirect()->to('himatikadmin/info')->with('error', 'Data info tidak ditemukan');
         }
-        $fotoPath = $info['foto'];
+        $fotoPath = $info['img'];
         if (file_exists($fotoPath)) {
             unlink($fotoPath);
         }

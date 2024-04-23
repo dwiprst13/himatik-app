@@ -59,7 +59,9 @@ $routes->get('/himatikadmin/info/editinfo', 'Admins\InfoController::updateInfo')
 $routes->get('/himatikadmin/info/deleteinfo/(:num)', 'Admins\InfoController::deleteInfo/$1');
 
 // Routes Untuk Info
-$routes->get('/himatikadmin/divisi', 'Admins\DivisiController::getAlldivisi');
+$routes->get('/himatikadmin/proker', 'Admins\ProkerController::getAllProker');
+$routes->get('/himatikadmin/proker/tambahproker', 'Admins\ProkerController::tambahProker');
+$routes->post('/himatikadmin/proker/tambahproker', 'Admins\ProkerController::simpanProker');
 // $routes->get('/himatikadmin/info/tambahinfo', 'Admins\InfoController::tambahInfo');
 // $routes->post('/himatikadmin/info/tambahinfo', 'Admins\InfoController::simpanInfo');
 // $routes->get('/himatikadmin/info/editinfo/(:num)', 'Admins\InfoController::viewInfo/$1');

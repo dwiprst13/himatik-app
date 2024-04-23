@@ -82,6 +82,7 @@ class ArtikelController extends ProtectedController
 
         $data = [
             'judul' => $this->request->getVar('judul'),
+            'author' => $this->request->getVar('penulis'),
             'content' => $this->request->getVar('isi'),
             'tag' => $this->request->getVar('tag'),
             'status' => $this->request->getVar('status'),
@@ -91,6 +92,50 @@ class ArtikelController extends ProtectedController
 
         $artikel->save($data);
         session()->setFlashdata('success', 'Berhasil menambahkan artikel baru');
+        return redirect('himatikadmin/artikel');
+    }
+    public function updateArtikel()
+    {
+        $artikelModel = new ArtikelModel();
+        $id = $this->request->getVar('id_artikel');
+        $artikel = $artikelModel->find($id);
+
+
+        if (!$artikel) {
+            return redirect()->to('himatikadmin/artikel')->with('error', 'Artikel tidak ditemukan.');
+        }
+
+        $foto = $this->request->getFile('new_foto');
+        $fotoPath = $artikel['img'];
+
+        if ($foto->isValid() && !$foto->hasMoved()) {
+            $uploadDir = FCPATH . 'uploads/artikel/';
+            if (!is_dir($uploadDir)) {
+                mkdir($uploadDir, 0777, true);
+            }
+
+            if ($fotoPath && file_exists(FCPATH . $fotoPath)) {
+                unlink(FCPATH . $fotoPath);
+            }
+
+            $fotoName = $foto->getRandomName();
+            $foto->move($uploadDir, $fotoName);
+            $fotoPath = 'uploads/artikel/' . $fotoName; 
+        }
+
+        $data = [
+            'judul' => $this->request->getVar('new_judul'),
+            'author' => $this->request->getVar('new_penulis'),
+            'content' => $this->request->getVar('new_isi'),
+            'tag' => $this->request->getVar('new_tag'),
+            'status' => $this->request->getVar('new_status'),
+            'edited_by' => $this->request->getVar('edited_by'),
+            'edited' => date("Y-m-d H:i:s"),
+            'img' => $fotoPath
+        ];
+
+        $artikelModel->update($id, $data);
+        session()->setFlashdata('success', 'Berhasil memperbarui artikel');
         return redirect('himatikadmin/artikel');
     }
     public function deleteArtikel($id)

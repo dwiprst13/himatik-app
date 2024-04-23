@@ -58,7 +58,6 @@ class LoginController extends BaseController
         return redirect()->to('/himatikadmin/login');
     }
 
-
     public function logout()
     {
         $session = session();

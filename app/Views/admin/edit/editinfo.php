@@ -21,13 +21,14 @@ $nama_admin = $session->get('nama_admin');
             </div>
         </div>
         <form class="w-[90%] flex flex-col mx-auto" action="/himatikadmin/info/editinfo" method="POST" enctype="multipart/form-data" autocomplete="off">
+            <input type="hidden" name="id_info" value="<?= $info['id_info'] ?>">
             <div class="my-12">
                 <div class="grid grid-cols-12 gap-5">
                     <div class="col-span-5">
                         <div class="mx-auto w-[100%]  ">
                             <label for="new_detail" class="block text-sm font-medium leading-6 ">Keterangan</label>
                             <div class="mt-2">
-                                <textarea id="new_detail" name="new_detail" rows="4" cols="50" type="text" placeholder="Detail Informasi" autocomplete="off" required class="block w-[100%] rounded-md border-0 py-1.5 text-gray-900 white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><?= $info['detail'] ?></textarea>
+                                <textarea id="new_detail" name="new_detail" rows="4" cols="50" type="text" placeholder="Detail Informasi" autocomplete="off" required class="block w-[100%] rounded-md border-0 py-1.5 text-gray-900 white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"><?php echo $info['detail'] ?></textarea>
                             </div>
                         </div>
                         <div class="mx-auto w-[100%]">

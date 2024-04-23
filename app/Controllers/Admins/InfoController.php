@@ -92,7 +92,6 @@ class InfoController extends ProtectedController
         }
 
         $data = [
-            'id_info' => $this->request->$id,
             'detail' => $this->request->getVar('new_detail'),
             'img' => $fotoPath
         ];

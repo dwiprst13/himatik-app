@@ -32,7 +32,7 @@ class InfoModel extends Model
     }
     public function getInfoById($id)
     {
-        return $this->where('id_Info', $id)->first();
+        return $this->where('id_info', $id)->first();
     }
     public function editInfo($id, array $data)
     {

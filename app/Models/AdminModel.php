@@ -19,11 +19,6 @@ class AdminModel extends Model
         'role'
     ];
     
-    /**
-     * @param string $username Username dari user yang ingin login.
-     * @param string $password Password yang diinput oleh user.
-     * @return mixed Returns array jika sukses, false jika gagal.
-     */
     public function validateAdmin($username, $password)
     {
         $user = $this->where('username', $username)->first();

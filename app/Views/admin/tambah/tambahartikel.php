@@ -29,6 +29,12 @@ $nama_admin = $session->get('nama_admin');
                         </div>
                     </div>
                     <div class="mx-auto w-[100%]">
+                        <label for="penulis" class="block text-sm   font-medium leading-6 ">Penulis</label>
+                        <div class="mt-2">
+                            <input id="penulis" name="penulis" type="text" autocomplete="off" placeholder="Penulis" required class="block w-[100%]  rounded-md border-0 py-1.5 text-gray-900 white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        </div>
+                    </div>
+                    <div class="mx-auto w-[100%]">
                         <div class="">
                             <label for="foto" class="block text-sm font-medium leading-6">Gambar</label>
                             <div class="grid grid-cols-12 gap-10">

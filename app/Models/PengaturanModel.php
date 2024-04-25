@@ -10,7 +10,6 @@ class PengaturanModel extends Model
     protected $primaryKey = 'id_data';
     protected $allowedFields = [
         'nama_kabinet',
-        'logo_himatik',
         'periode',
         'gambar_banner'
     ];

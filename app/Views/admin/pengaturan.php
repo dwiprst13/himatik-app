@@ -22,7 +22,20 @@
                 </div>
             </div>
             <section class="w-[100%] mx-auto ">
-
+                <form action="">
+                    <div>
+                        <label for="nama_kabinet">Nama Kabinet:</label>
+                        <input type="text" id="nama_kabinet" name="nama_kabinet">
+                    </div>
+                    <div>
+                        <label for="periode">Periode:</label>
+                        <input type="text" id="periode" name="periode">
+                    </div>
+                    <div>
+                        <label for="logo_kabinet">Logo Kabinet:</label>
+                        <input type="file" id="logo_kabinet" name="logo_kabinet">
+                    </div>
+                </form>
             </section>
         </div>
     </body>

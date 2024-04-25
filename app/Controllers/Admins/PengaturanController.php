@@ -9,11 +9,11 @@ class PengaturanController extends ProtectedController
 {
     public function getAllPengaturan()
     {
-        $artikelModel = new PengaturanModel();
-        $allArtikel = $artikelModel->getAllArtikel();
+        $pengaturanModel = new PengaturanModel();
+        $allPengaturan = $pengaturanModel->getAllData();
         echo view('templates/header');
         echo view('templates/sidebar');
-        echo view('admin/artikel', ['allArtikel' => $allArtikel]);
+        echo view('admin/pengaturan', ['allPengaturan' => $allPengaturan]);
     }
     public function getArtikelById($id)
     {

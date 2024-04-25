@@ -16,6 +16,14 @@ $routes->get('/himatikadmin', 'Admins\DashboardController::index');
 $routes->get('/himatikadmin/dashboard', 'Admins\DashboardController::index'); 
 
 // Routes Untuk Admin
+$routes->get('/himatikadmin/pengaturan', 'Admins\PengaturanController::getAllPengaturan');
+// $routes->get('/himatikadmin/pengaturan/tambahPengaturan', 'Admins\PengaturanController::tambahPengaturan');
+$routes->post('/himatikadmin/pengaturan/tambahpengaturan', 'Admins\PengaturanController::simpanPengaturan');
+$routes->get('/himatikadmin/pengaturan/editpengaturan/(:num)', 'Admins\PengaturanController::viewPengaturan/$1');
+$routes->post('/himatikadmin/pengaturan/editpengaturan/(:num)', 'Admins\PengaturanController::updatePengaturan/$1');
+$routes->get('/himatikadmin/pengaturan/deletepengaturan/(:num)', 'Admins\PengaturanController::deletePengaturan/$1');
+
+// Routes Untuk Admin
 $routes->get('/himatikadmin/admin', 'Admins\AdminController::getAllAdmin');
 $routes->get('/himatikadmin/admin/tambahadmin', 'Admins\AdminController::tambahAdmin');
 $routes->post('/himatikadmin/admin/tambahadmin', 'Admins\AdminController::simpanAdmin');

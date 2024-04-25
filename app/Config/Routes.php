@@ -58,15 +58,23 @@ $routes->post('/himatikadmin/info/editinfo', 'Admins\InfoController::updateInfo'
 $routes->get('/himatikadmin/info/editinfo', 'Admins\InfoController::updateInfo');
 $routes->get('/himatikadmin/info/deleteinfo/(:num)', 'Admins\InfoController::deleteInfo/$1');
 
-// Routes Untuk Info
+// Routes Untuk Gambar
+$routes->get('/himatikadmin/artikel/gambar', 'Admins\GambarController::getAllGambar');
+$routes->get('/himatikadmin/artikel/gambar/tambahgambar', 'Admins\GambarController::tambahGambar');
+$routes->post('/himatikadmin/artikel/gambar/tambahgambar', 'Admins\GambarController::simpanGambar');
+$routes->get('/himatikadmin/artikel/gambar/editgambar/(:num)', 'Admins\GambarController::viewGambar/$1');
+$routes->post('/himatikadmin/artikel/gambar/editgambar', 'Admins\GambarController::updateGambar');
+$routes->get('/himatikadmin/artikel/gambar/editgambar', 'Admins\GambarController::updateGambar');
+$routes->get('/himatikadmin/artikel/gambar/deletegambar/(:num)', 'Admins\GambarController::deleteGambar/$1');
+
+// Routes Untuk Proker
 $routes->get('/himatikadmin/proker', 'Admins\ProkerController::getAllProker');
 $routes->get('/himatikadmin/proker/tambahproker', 'Admins\ProkerController::tambahProker');
 $routes->post('/himatikadmin/proker/tambahproker', 'Admins\ProkerController::simpanProker');
-// $routes->get('/himatikadmin/info/tambahinfo', 'Admins\InfoController::tambahInfo');
-// $routes->post('/himatikadmin/info/tambahinfo', 'Admins\InfoController::simpanInfo');
-// $routes->get('/himatikadmin/info/editinfo/(:num)', 'Admins\InfoController::viewInfo/$1');
-// $routes->post('/himatikadmin/info/editinfo', 'Admins\InfoController::updateInfo');
-// $routes->get('/himatikadmin/info/deleteinfo/(:num)', 'Admins\InfoController::deleteInfo/$1');
+$routes->get('/himatikadmin/proker/editproker/(:num)', 'Admins\ProkerController::viewProker/$1');
+$routes->post('/himatikadmin/proker/editproker', 'Admins\ProkerController::updateProker');
+$routes->get('/himatikadmin/proker/editproker', 'Admins\ProkerController::updateProker');
+$routes->get('/himatikadmin/proker/deleteproker/(:num)', 'Admins\ProkerController::deleteProker/$1');
 
 // $routes->get('/himatikadmin/proker/tambahproker', 'AdminTambah::proker');
 // $routes->get('/himatikadmin/galeri/tambahgaleri', 'AdminTambah::galeri');

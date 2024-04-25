@@ -11,7 +11,7 @@
             'bold italic backcolor | alignleft aligncenter ' +
             'alignright alignjustify | bullist numlist outdent indent | ' +
             'removeformat | help',
-        content_style: 'body { font-size:13px }'
+        content_style: 'body { font-size:13px, z-index=100 }'
     });
 
     function readURL(input) {

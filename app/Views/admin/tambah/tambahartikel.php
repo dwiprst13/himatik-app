@@ -3,21 +3,19 @@ $session = session();
 $nama_admin = $session->get('nama_admin');
 ?>
 
-<body>
-    <div class="ml-64 h-screen">
+<body class="z-40 relative w-full">
+    <div class="ml-64 h-screen z-30">
         <div class="p-4 flex">
             <h1 class="text-xl">
                 Tambah Artikel
             </h1>
         </div>
         <div class=" px-3 py-4 flex justify-between">
-            <div>
-                <button class="mr-3 text-sm bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">
-                    <a href="/himatikadmin/artikel">Kembali</a>
-                </button>
+            <div class="mr-3 text-sm bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">
+                <a href="/himatikadmin/artikel">Kembali</a>
             </div>
         </div>
-        <form class="w-[90%] flex flex-col mx-auto pb-32" action="/himatikadmin/artikel/tambahartikel" method="POST" enctype="multipart/form-data" autocomplete="off">
+        <form class="w-[90%] flex z-40 flex-col mx-auto pb-32" action="/himatikadmin/artikel/tambahartikel" method="POST" enctype="multipart/form-data" autocomplete="off">
             <div class="">
                 <div class="space-y-6">
                     <input type="hidden" name="writer" id="writer" value="<?php echo $nama_admin ?>">
@@ -48,10 +46,10 @@ $nama_admin = $session->get('nama_admin');
                             </div>
                         </div>
                     </div>
-                    <div class="mx-auto w-[100%]  ">
+                    <div class="mx-auto w-[100%]">
                         <label for="isi" class="block text-sm font-medium leading-6 ">Isi</label>
-                        <div class="mt-2">
-                            <textarea id="isi" name="isi" rows="16" cols="50" type="text" placeholder="Isi Artikel" autocomplete="off" class=" "></textarea>
+                        <div class="mt-2 z-40">
+                            <textarea id="isi" name="isi" rows="16" cols="50" type="text" placeholder="Isi Artikel" autocomplete="off" class=""></textarea>
                         </div>
                     </div>
                     <div class="flex gap-10">
@@ -75,5 +73,30 @@ $nama_admin = $session->get('nama_admin');
         </form>
     </div>
 </body>
+<script>
+    const showImagesBtn = document.getElementById('showImagesBtn');
+    const imageList = document.getElementById('imageList');
+
+    showImagesBtn.addEventListener('click', function() {
+        if (imageList.classList.contains('hidden')) {
+            imageList.classList.remove('hidden');
+        } else {
+            imageList.classList.add('hidden');
+        }
+    });
+
+    function copyURL(elementId) {
+        var fullUrl = document.getElementById(elementId).src;
+        var match = fullUrl.match(/\/uploads\/gambar\/(.*)/);
+        var url = match ? match[0] : '';
+        var textarea = document.createElement('textarea');
+        textarea.value = url;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        alert('Link telah disalin: ' + url);
+    }
+</script>
 
 </html>

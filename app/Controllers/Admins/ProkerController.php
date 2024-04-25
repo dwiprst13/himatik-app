@@ -43,6 +43,8 @@ class ProkerController extends ProtectedController
         $data = [
             'judul' => $this->request->getVar('judul'),
             'deskripsi' => $this->request->getVar('deskripsi'),
+            'date' => $this->request->getVar('date'),
+            'divisi' => $this->request->getVar('divisi'),
             'img' => $fotoPath
         ];
 
@@ -58,7 +60,7 @@ class ProkerController extends ProtectedController
         if ($proker) {
             echo view('templates/header');
             echo view('templates/sidebar');
-            echo view('admin/edit/editproker', ['Proker' => $proker]);
+            echo view('admin/edit/editproker', ['proker' => $proker]);
         } else {
             throw new \CodeIgniter\Exceptions\PageNotFoundException("proker with ID {$id} not found");
         }

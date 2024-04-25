@@ -38,14 +38,14 @@
                         <label for="new_divisi" class="block text-sm font-medium leading-6">Divisi</label>
                         <div class="mt-2">
                             <select id="new_divisi" name="new_divisi" required class="block w-full rounded-md p-2 border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                                <option value="Ketua">Ketua</option>
-                                <option value="Wakil Ketua">Wakil Ketua</option>
-                                <option value="BPH">BPH</option>
-                                <option value="Kominfo">Kominfo</option>
-                                <option value="Sosmas">Sosmas</option>
-                                <option value="Diklat">Diklat</option>
-                                <option value="PSDA">PSDA</option>
-                                <option value="Keagamaan">Keagamaan</option>
+                                <option value="Ketua" <?= $pengurus['divisi'] == 'Ketua' ? 'selected' : '' ?>>Ketua</option>
+                                <option value="Wakil Ketua" <?= $pengurus['divisi'] == 'Wakil Ketua' ? 'selected' : '' ?>>Wakil Ketua</option>
+                                <option value="BPH" <?= $pengurus['divisi'] == 'BPH' ? 'selected' : '' ?>>BPH</option>
+                                <option value="Kominfo" <?= $pengurus['divisi'] == 'Kominfo' ? 'selected' : '' ?>>Kominfo</option>
+                                <option value="Sosmas" <?= $pengurus['divisi'] == 'Sosmas' ? 'selected' : '' ?>>Sosmas</option>
+                                <option value="Diklat" <?= $pengurus['divisi'] == 'Diklat' ? 'selected' : '' ?>>Diklat</option>
+                                <option value="PSDA" <?= $pengurus['divisi'] == 'PSDA' ? 'selected' : '' ?>>PSDA</option>
+                                <option value="Keagamaan" <?= $pengurus['divisi'] == 'Keagamaan' ? 'selected' : '' ?>>Keagamaan</option>
                             </select>
                         </div>
                     </div>

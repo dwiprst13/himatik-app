@@ -17,7 +17,8 @@
     <title>Himatik Admin</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.tiny.cloud/1/92xg6wlqw9faoyfala0uu4ysc1irr953fn9goktkphy4w1ir/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
-    <meta name="title", content="HIMATIK UAA Admin Page">
-    <meta name="description", content="Halaman admin untuk website Himatik UAA">
+    <meta name="title" , content="HIMATIK UAA Admin Page">
+    <meta name="description" , content="Halaman admin untuk website Himatik UAA">
 </head>

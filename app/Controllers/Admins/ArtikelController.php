@@ -4,6 +4,7 @@ namespace App\Controllers\Admins;
 
 use App\Controllers\ProtectedController;
 use App\Models\ArtikelModel;
+use App\Models\GambarModel;
 
 class ArtikelController extends ProtectedController
 {
@@ -57,8 +58,11 @@ class ArtikelController extends ProtectedController
     }
     public function tambahArtikel()
     {
+        $gambarModel = new GambarModel();
+        $gambar = $gambarModel->getAllGambar();
         echo view('templates/header');
         echo view('templates/sidebar');
+        echo view('admin/tambah/gambarpopup', ['allGambar' => $gambar]);
         echo view('admin/tambah/tambahartikel');
         echo view('admin/tools/artikelspecialscript');
     }

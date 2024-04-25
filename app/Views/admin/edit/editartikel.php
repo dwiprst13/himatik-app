@@ -17,34 +17,12 @@ $nama_admin = $session->get('nama_admin');
                 </button>
             </div>
         </div>
-        <?php
-        if (session()->getFlashdata('error')) {
-        ?>
-            <div class="">
-                <div class="flex text-white justify-center rounded-md w-[70%] bg-red-400 px-3 py-1 text-sm font-semibold leading-6 shadow-sm mx-auto">
-                    <?php echo session()->getFlashdata('error') ?>
-                </div>
-            </div>
-        <?php
-        }
-        ?>
-        <?php
-        if (session()->getFlashdata('success')) {
-        ?>
-            <div class="">
-                <div class="flex text-white justify-center rounded-md w-[70%] bg-red-400 px-3 py-1 text-sm font-semibold leading-6 shadow-sm mx-auto">
-                    <?php echo session()->getFlashdata('success') ?>
-                </div>
-            </div>
-        <?php
-        }
-        ?>
+        <?php view('admin/tools/getflashdata') ?>
         <form class="w-[90%] flex flex-col mx-auto pb-32" action="/himatikadmin/artikel/editartikel/<?php echo $artikel['id_artikel'] ?>" method="POST" enctype="multipart/form-data" autocomplete="off">
             <div class="">
                 <div class="space-y-6">
                     <input type="hidden" name="edited_by" id="edited_by" value="<?php echo $nama_admin ?>">
                     <input type="hidden" name="id_artikel" id="id_artikel" value="<?php echo $artikel['id_artikel'] ?>">
-                    <p><?php echo $nama_admin ?></p>
                     <div class="mx-auto w-[100%]">
                         <label for="new_judul" class="block text-sm font-medium leading-6 ">Judul</label>
                         <div class="mt-2">
@@ -54,7 +32,7 @@ $nama_admin = $session->get('nama_admin');
                     <div class="mx-auto w-[100%]">
                         <label for="new_penulis" class="block text-sm   font-medium leading-6 ">Penulis</label>
                         <div class="mt-2">
-                            <input id="new_penulis" name="new_penulis" type="text" value="<?php echo $artikel['judul'] ?>" autocomplete="off" placeholder="Penulis" required class="block w-[100%]  rounded-md border-0 py-1.5 text-gray-900 white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            <input id="new_penulis" name="new_penulis" type="text" value="<?php echo $artikel['author'] ?>" autocomplete="off" placeholder="Penulis" required class="block w-[100%]  rounded-md border-0 py-1.5 text-gray-900 white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                         </div>
                     </div>
                     <div class="mx-auto w-[100%]">

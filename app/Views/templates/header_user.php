@@ -17,7 +17,8 @@
     <title>Himatik UAA</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.tiny.cloud/1/92xg6wlqw9faoyfala0uu4ysc1irr953fn9goktkphy4w1ir/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
-    <meta name="title", content="HIMATIK UAA User Page">
-    <meta name="description", content="Halaman pengguna website Himatik UAA">
+    <meta name="title" , content="HIMATIK UAA User Page">
+    <meta name="description" , content="Halaman pengguna website Himatik UAA">
 </head>

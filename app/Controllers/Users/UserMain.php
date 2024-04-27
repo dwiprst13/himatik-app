@@ -24,8 +24,8 @@ class UserMain extends BaseController
         echo view('templates/header_user');
         echo view('user/header');
         echo view('user/banner');
-        echo view('user/about');
-        echo view('user/pengurus', ['allPengurus' => $allPengurus]);
+        echo view('user/about', ['allPengurus' => $allPengurus]);
+        echo view('user/pengurus');
         echo view('user/info');
         echo view('user/galeri', ['latestGaleri' => $latestGaleri]);
         echo view('user/artikel', ['latestArtikel' => $latestArtikel]);

@@ -36,7 +36,7 @@ $routes->get('/himatikadmin/pengurus', 'Admins\PengurusController::getAllPenguru
 $routes->get('/himatikadmin/pengurus/tambahpengurus', 'Admins\PengurusController::tambahPengurus');
 $routes->post('/himatikadmin/pengurus/tambahpengurus', 'Admins\PengurusController::simpanPengurus');
 $routes->get('/himatikadmin/pengurus/editpengurus/(:num)', 'Admins\PengurusController::viewPengurus/$1');
-$routes->post('/himatikadmin/pengurus/editpengurus/(:num)', 'Admins\PengurusController::updatePengurus/$1');
+$routes->post('/himatikadmin/pengurus/editpengurus', 'Admins\PengurusController::updatePengurus');
 $routes->get('/himatikadmin/pengurus/deletepengurus/(:num)', 'Admins\PengurusController::deletePengurus/$1');
 
 // Routes Untuk Galeri

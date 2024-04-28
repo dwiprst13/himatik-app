@@ -1,0 +1,90 @@
+INFO - 2024-04-28 01:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 01:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 01:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 01:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 01:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 01:28:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 01:28:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 01:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 01:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 01:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 01:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 01:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 01:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 01:28:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 01:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 01:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-28 01:57:49 --> ErrorException: Undefined variable $latestGaleri
+in APPPATH\Views\user\info.php on line 7.
+ 1 APPPATH\Views\user\info.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $latestGaleri', 'C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\info.php', 7)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\info.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/info', [], true)
+ 5 APPPATH\Controllers\Users\UserMain.php(28): view('user/info')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-04-28 02:10:43 --> ErrorException: Undefined variable $latestGaleri
+in APPPATH\Views\user\info.php on line 7.
+ 1 APPPATH\Views\user\info.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $latestGaleri', 'C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\info.php', 7)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\info.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/info', [], true)
+ 5 APPPATH\Controllers\Users\UserMain.php(29): view('user/info', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-04-28 02:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:20:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:21:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-28 02:21:07 --> ErrorException: Undefined property: stdClass::$judul
+in APPPATH\Views\user\info.php on line 10.
+ 1 APPPATH\Views\user\info.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$judul', 'C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\info.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\info.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/info', [], true)
+ 5 APPPATH\Controllers\Users\UserMain.php(29): view('user/info', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-04-28 02:21:25 --> ErrorException: Undefined property: stdClass::$deskripsi
+in APPPATH\Views\user\info.php on line 13.
+ 1 APPPATH\Views\user\info.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$deskripsi', 'C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\info.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\info.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/info', [], true)
+ 5 APPPATH\Controllers\Users\UserMain.php(29): view('user/info', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-04-28 02:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:46:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 02:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 03:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-28 03:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

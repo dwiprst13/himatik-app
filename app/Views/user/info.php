@@ -1,4 +1,4 @@
-<section class="w-[100%] mx-auto my-10">
+<section class="w-[100%] mx-auto py-10  bg-gray-900">
     <div class="w-[95%] mx-auto md:w-[90%] bg-white rounded-2xl p-3 md:p-5 shadow-lg">
         <div>
             <h2 class="font-bold text-[1.6rem] md:text-[2rem] lg:text-[2.5rem] text-blue-700 my-5">Info</h2>

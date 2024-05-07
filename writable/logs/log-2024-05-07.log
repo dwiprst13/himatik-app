@@ -1,0 +1,11 @@
+CRITICAL - 2024-05-07 02:42:18 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\user\artikel.php on line 9.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/artikel', [], true)
+ 4 APPPATH\Controllers\Users\UserMain.php(31): view('user/artikel', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')

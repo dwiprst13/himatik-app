@@ -1,4 +1,5 @@
-<section class="bg-gradient-to-b from-gray-900 from-20% to-20%">
+<!-- <section class="bg-gradient-to-b from-gray-900 from-20% to-20%"> -->
+<section class="bg-gray-900">
     <div class="w-[95%] mx-auto md:w-[90%] bg-white rounded-2xl p-3 md:p-5 shadow-lg">
         <div>
             <h2 class="font-bold text-[1.6rem] md:text-[2rem] lg:text-[2.5rem] text-blue-700">Tentang Kami</h2>
@@ -18,7 +19,7 @@
             <div class="bg-blue-700 rounded-full text-white w-fit px-3 md:px-5 flex items-center shadow-lg">
                 <h3 class="text-[1.2rem] md:text-[1.3rem] lg:text-[1.5rem]">Visi & Misi</h3>
             </div>
-            <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row gap-5 md:gap-0">
+            <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row gap-5 md:gap-3">
                 <div class="w-full md:w-1/2 p-5 border rounded-2xl bg-white shadow-md hover:shadow-xl">
                     <h4 class="font-bold text-center text-[1.3rem] py-3">Visi</h4>
                     <p>

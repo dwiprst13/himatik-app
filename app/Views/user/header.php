@@ -3,19 +3,34 @@
         <div class="md:w-1/3 justify-start">
             <h1><a class="text-white text-2xl font-bold" href="">HIMATIK UAA</a></h1>
         </div>
-        <div class="md:w-1/3 justify-center nav-links duration-500 bg-gray-900 lg:static absolute lg:min-h-fit min-h-[60vh] left-0 top-[-800%] text-white w-full flex items-center px-5">
-            <ul class="flex flex-col lg:flex-row lg:items-center lg:gap-[4vw] gap-8 my-10 md:my-0">
+        <div class="w-full md:w-1/3 justify-center nav-links duration-500 bg-gray-900 lg:static absolute lg:min-h-fit min-h-[60vh] left-0 top-[-800%] text-white flex items-center px-5">
+            <ul class="flex w-full flex-col md:justify-center md:mx-auto lg:flex-row lg:items-center gap-5 my-10 md:my-0">
                 <li>
-                    <a class="text-blue-600 hover:text-gray-500" href="#">Beranda</a>
+                    <a class="<?= (current_url() === base_url('/')) ? 'text-blue-600' : 'text-white'; ?> hover:text-gray-500 flex justify-between" href="/">
+                        <p>Beranda</p>
+                        <div class="block md:hidden"><i class="fas fa-chevron-right"></i></div>
+                    </a>
                 </li>
+                <hr class="block md:hidden">
                 <li>
-                    <a class="text-white hover:text-gray-500" href="#">Galeri</a>
+                    <a class="<?= (current_url() === base_url('/galeri')) ? 'text-blue-600' : 'text-white'; ?> hover:text-gray-500 flex justify-between" href="/galeri">
+                        <p>Galeri</p>
+                        <div class="block md:hidden"><i class="fas fa-chevron-right"></i></div>
+                    </a>
                 </li>
+                <hr class="block md:hidden">
                 <li>
-                    <a class="text-white hover:text-gray-500" href="#">Artikel</a>
+                    <a class="<?= (strpos(current_url(), base_url('/artikel')) === 0) ? 'text-blue-600' : 'text-white'; ?> hover:text-gray-500 flex justify-between" href="/artikel">
+                        <p>Artikel</p>
+                        <div class="block md:hidden"><i class="fas fa-chevron-right"></i></div>
+                    </a>
                 </li>
+                <hr class="block md:hidden">
                 <li>
-                    <a class="text-white hover:text-gray-500" href="#">Kontak</a>
+                    <a class="<?= (current_url() === base_url('/ruang')) ? 'text-blue-600' : 'text-white'; ?> hover:text-gray-500 flex justify-between" href="/ruang">
+                        <p>Ruang Himatik</p>
+                        <div class="block md:hidden"><i class="fas fa-chevron-right"></i></div>
+                    </a>
                 </li>
             </ul>
         </div>

@@ -108,3 +108,7 @@ $routes->get('/himatikadmin/proker/deleteproker/(:num)', 'Admins\ProkerControlle
 
 // Routes Untuk User 
 $routes->get('/', 'Users\UserMain::index');
+$routes->get('/artikel', 'Users\UserMain::artikel');
+$routes->get('/artikel/(:num)', 'Users\UserMain::detailArtikel/$1');
+$routes->get('/galeri', 'Users\UserMain::galeri');
+$routes->get('/kontak', 'Users\UserMain::kontak');

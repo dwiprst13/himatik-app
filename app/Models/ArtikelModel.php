@@ -29,7 +29,7 @@ class ArtikelModel extends Model
     {
         return $this->findAll();
     }
-    public function getLatestArtikel($limit = 4)
+    public function getLatestArtikel($limit = 2)
     {
         return $this->db->table('artikel')
         ->orderBy('id_artikel', 'DESC')

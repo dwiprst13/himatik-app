@@ -76,11 +76,12 @@
         </div>
     </div>
 </section>
-<div id="data-container" class="w-[90%] mx-auto flex flex-wrap justify-center my-10">
+<div id="data-container" class="flex flex-wrap justify-center">
     <?php foreach ($allPengurus as $pengurus) : ?>
-        <div class="w-[50%] md:w-[33.3333%] lg:w-[25%] p-2 flex flex-col my-3" data-divisi="<?php echo ($pengurus['divisi']); ?>">
-            <div class="relative bg-gray-100 h-[12rem] md:h-[16rem] lg:h-[20rem] flex">
-                <img src="/<?php echo ($pengurus['foto']); ?>" class="w-full object-cover rounded-lg" alt="Profile picture of <?php echo ($pengurus['nama_panggilan']); ?>">
+        <div class="w-[50%] md:w-[33.3333%] lg:w-[25%] py-[1rem] md:py-[2rem] p-2 my-3 flex flex-col
+        " data-divisi="<?php echo ($pengurus['divisi']); ?>">
+            <div class="relative flex justify-center">
+                <img src="/<?php echo ($pengurus['foto']); ?>" class=" aspect-w-2 aspect-h-6 object-cover rounded-lg" alt="Profile picture of <?php echo ($pengurus['nama_panggilan']); ?>">
                 <div id="detail" class="absolute flex flex-col items-center text-transparent hover:text-white bg-opacity-0 rounded-lg h-full w-full hover:bg-black/80 hover:bg-opacity-50 transition duration-300 ease-in-out">
                     <div class="h-4/5 flex items-center">
                         <div class="">
@@ -89,9 +90,9 @@
                         </div>
                     </div>
                     <div class="h-1/5 w-full items-center flex text-[1.5rem] px-5 justify-between">
-                        <a target="_blank" href="<?php echo $pengurus['ig_link']; ?>"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a target="_blank" href="<?php echo $pengurus['linkedin_link']; ?>"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                        <a target="_blank" href="<?php echo $pengurus['github_link']; ?>"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="<?php echo $pengurus['ig_link']; ?>"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="<?php echo $pengurus['linkedin_link']; ?>"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="<?php echo $pengurus['github_link']; ?>"><i class="fab fa-github" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>

@@ -4,6 +4,7 @@ namespace App\Controllers\Users;
 
 use App\Controllers\BaseController;
 use App\Models\InfoModel;
+use App\Models\KomentarModel;
 use App\Models\PengurusModel;
 use App\Models\ArtikelModel;
 use App\Models\GaleriModel;
@@ -32,16 +33,38 @@ class UserMain extends BaseController
         echo view('user/kontak');
         echo view('user/footer');
     }
+    public function login()
+    {
+
+        echo view('templates/header_user');
+        echo view('user/auth/login');
+    }
+    public function register()
+    {
+
+        echo view('templates/header_user');
+        echo view('user/auth/register');
+    }
     public function artikel()
     {
         $artikelModel = new ArtikelModel();
-        $allArtikel = $artikelModel->getAllArtikel();
+        $searchPost = $this->request->getVar('searchPost');
+
+        if (!empty($searchPost)) {
+            $allArtikel = $artikelModel->searchArtikel($searchPost);
+        } else {
+            $allArtikel = $artikelModel->getAllArtikel();
+        }
+
         echo view('templates/header_user');
         echo view('user/header');
-        echo view(
-        'user/artikel/artikel', ['allArtikel' => $allArtikel]);
+        echo view('user/artikel/artikel', [
+            'allArtikel' => $allArtikel,
+            'searchPost' => $searchPost 
+        ]);
         echo view('user/footer');
     }
+
     public function getAllArtikel()
     {
         $artikelModel = new ArtikelModel();
@@ -51,15 +74,18 @@ class UserMain extends BaseController
         echo view('user/artikel/artikel', ['allArtikel' => $allArtikel]);
         echo view('user/footer');
     }
+
+
     public function detailArtikel($id)
     {
         $artikelModel = new ArtikelModel();
         $artikel = $artikelModel->getArtikelById($id);
+        $allArtikel = $artikelModel->getAllArtikel();
 
         echo view('templates/header_user');
         echo view('user/header');
         echo view(
-        'user/artikel/artikel_detail', ['artikel' => $artikel]);
+        'user/artikel/artikel_detail', ['artikel' => $artikel, 'allArtikel' => $allArtikel]);
         echo view('user/footer');
     }
     public function galeri()
@@ -77,5 +103,20 @@ class UserMain extends BaseController
         echo view('user/header');
         echo view('user/galeri/galeri');
         echo view('user/footer');
+    }
+    public function ruangHimatik()
+    {
+        echo view('templates/header_user');
+        echo view('user/ruanghimatik/ruanghimatik');
+    }
+    public function getAllKomentar()
+    {
+        $komentarModel = new KomentarModel();
+        $komentar = $komentarModel->getAllKomentar();
+    }
+
+    public function postComent()
+    {
+        
     }
 }

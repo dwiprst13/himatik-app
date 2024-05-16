@@ -5,12 +5,12 @@
         </div>
         <div class="container flex overflow-x-auto no-scrollbar px-4" id="galleryContainer">
             <?php foreach ($latestInfo as $info) : ?>
-                <div class="flex-shrink-0 w-[100%] md:w-[75%] xl:w-[50%]" onclick="openModal('/<?= $info->img ?>')">
-                    <div class="w-full bg-white flex flex-col space-y-1.5 p-2 justify-center items-center">
-                        <div class="bg-black h-72 md:h-96 w-full flex justify-center items-center overflow-hidden">
+                <div class="flex-shrink-0 w-[100%] md:w-[75%] xl:w-[50%] aspect-w-5 aspect-h-4 mb-5 md:mb-0" onclick="openModal('/<?= $info->img ?>')">
+                    <div class="w-full flex flex-col space-y-1.5 p-2 justify-center items-center">
+                        <div class="bg-black h-72 aspect-w-5 aspect-h-4 md:h-96 flex justify-center items-center overflow-hidden">
                             <img src="/<?= $info->img ?>" alt="" class="object-fill w-full h-full">
                         </div>
-                        <p class="line-clamp-1 text-center font-semibold"><?= $info->detail ?></p>
+                        <p class="line-clamp-1 text-center font-bold"><?= $info->detail ?></p>
                     </div>
                 </div>
             <?php endforeach; ?>

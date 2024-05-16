@@ -6,6 +6,16 @@
         </div>
         <div class="my-10 space-y-5">
             <div class="bg-blue-700 rounded-full text-white w-fit px-3 md:px-5 flex items-center shadow-lg">
+                <h3 class="text-[1.2rem] md:text-[1.3rem] lg:text-[1.5rem]">Profil</h3>
+            </div>
+            <div class="text-center p-5 border rounded-2xl bg-white shadow-md">
+                <p class="text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] text-center">
+                    <span class="text-blue-600">Kabinet Kode Inovasi </span>lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas impedit nulla, dolorem molestiae dolorum ea deserunt quasi nostrum adipisci quae harum saepe accusantium officia cum iure rerum iste in dolor quo officiis ipsam mollitia exercitationem!
+                </p>
+            </div>
+        </div>
+        <div class="my-10 space-y-5">
+            <div class="bg-blue-700 rounded-full text-white w-fit px-3 md:px-5 flex items-center shadow-lg">
                 <h3 class="text-[1.2rem] md:text-[1.3rem] lg:text-[1.5rem]">Sejarah</h3>
             </div>
             <div class="text-center p-5 border rounded-2xl bg-white shadow-md">
@@ -55,6 +65,5 @@
                 ?>
             </div>
         </div>
-    </div>
     </div>
 </section>

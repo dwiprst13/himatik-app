@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\AdminModel;
+use App\Models\UserAuthModels;
 
 class LoginController extends BaseController
 {
@@ -10,6 +11,11 @@ class LoginController extends BaseController
     {
         echo view('templates/header');
         echo view('admin/login');
+    }
+    public function userLogin()
+    {
+        echo view('templates/header');
+        echo view('user/auth/login');
     }
     public function lupapassword()
     {
@@ -56,6 +62,45 @@ class LoginController extends BaseController
 
         session()->setFlashdata('error', 'Error with your login details');
         return redirect()->to('/himatikadmin/login');
+    }
+    public function authUser()
+    {
+        $session = session();
+        $UserModel = new UserAuthModels();
+        $login = $this->request->getPost('login');
+
+        if ($login) {
+            $user_username = $this->request->getVar('user_username');
+            $user_password = $this->request->getVar('user_password');
+
+            if (empty($user_username) || empty($user_password)) {
+                session()->setFlashdata('error', "Silakan isi form inputan!");
+                return redirect()->to('login');
+            }
+
+            $dataUser = $UserModel->where("username", $user_username)->first();
+
+            if ($dataUser && password_verify($user_password, $dataUser['password'])) {
+                echo "Login successful! Session data:<br>";
+                print_r($dataUser);
+                $dataSesi = [
+                    'id_user' => $dataUser['id_user'],
+                    'nama_user' => $dataUser['nama'],
+                    'username_user' => $dataUser['username'],
+                    'logged_in' => TRUE
+                ];
+                $session->set($dataSesi);
+                echo "Session data set:<br>";
+                print_r($_SESSION);
+                return redirect()->to('/');
+            } else {
+                session()->setFlashdata('error', 'Username atau Password salah');
+                return redirect()->to('/login');
+            }
+        }
+
+        session()->setFlashdata('error', 'Error with your login details');
+        return redirect()->to('/login');
     }
 
     public function logout()

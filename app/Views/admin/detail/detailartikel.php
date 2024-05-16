@@ -5,6 +5,10 @@ $konten = str_replace('<h2', '<h2 class="text-[1.7rem] font-bold"', $konten);
 $konten = str_replace('<p>', '<p class="text-justify my-2"> ', $konten);
 $konten = str_replace('width="300" height="168"', '', $konten);
 $konten = str_replace('width="300" height="200"', '', $konten);
+$konten = str_replace('<ul>', '<table class="pl-3">', $konten);
+$konten = str_replace('</ul>', '</table>', $konten);
+$konten = str_replace('<li>', '<tr class="flex gap-4"><td class="font-semibold">-</td><td>', $konten);
+$konten = str_replace('</li>', '</td></tr>', $konten);
 ?>
 <div class="ml-64 h-screen">
     <div class="p-4 flex">
@@ -73,7 +77,7 @@ $konten = str_replace('width="300" height="200"', '', $konten);
                     <p class=" rounded-lg">Author:</p>
                     <p class="w-full px-2 text-center bg-gray-400 rounded"><?= $artikel['author'] ?></p>
                     <p class=" rounded-lg">Status:
-                        <p class="text-green-500w-full px-2 text-center text-white bg-green-600 rounded">Published</p>
+                    <p class="text-green-500w-full px-2 text-center text-white bg-green-600 rounded">Published</p>
                     </p>
                     <p class=" rounded-lg">Tag:</p>
                     <p class="w-full px-2 text-center bg-gray-400 rounded"><?= $artikel['tag'] ?></p>

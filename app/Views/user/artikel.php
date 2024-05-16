@@ -4,11 +4,10 @@
             <h2 class="font-bold text-[1.6rem] md:text-[2rem] lg:text-[2.5rem] text-blue-700 my-5">Artikel</h2>
         </div>
         <h3>Himatik sekarang punya wadah untuk menyalurkan bakat bakat kalian dalam bidang menulis loh, jika ada karya kalian yang bisa kita unggah, silahkan kirimkan kepada kita</h3>
-        <div class="container flex flex-wrap mx-auto space-y-3 md:px-4 my-5">
+        <div class="container flex flex-wrap mx-auto space-y-3 md:space-y-0 md:px-4 my-5">
             <?php foreach ($latestArtikel as $artikel) : ?>
                 <a href="/artikel/<?= $artikel->id_artikel ?>" class="w-[100%] md:w-[50%] mx-auto h-40 md:h-48 flex items-center md:p-2">
                     <div class="flex gap-3 border border-gray-900 h-full w-full p-2 rounded-xl">
-                        <img src="/<?= $artikel->img ?> " alt="<?= $artikel->judul ?>" class="hidden md:flex md:w-[40%] object-contain">
                         <div class="flex items-center">
                             <div>
                                 <h4 class="font-semibold text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] text-black"><?= $artikel->judul ?></h4>

@@ -27,15 +27,20 @@
                 </li>
                 <hr class="block md:hidden">
                 <li>
-                    <a class="<?= (current_url() === base_url('/ruang')) ? 'text-blue-600' : 'text-white'; ?> hover:text-gray-500 flex justify-between" href="/ruang">
+                    <a class="<?= (current_url() === base_url('/ruanghimatik')) ? 'text-blue-600' : 'text-white'; ?> hover:text-gray-500 flex justify-between" href="/ruanghimatik">
                         <p>Ruang Himatik</p>
                         <div class="block md:hidden"><i class="fas fa-chevron-right"></i></div>
                     </a>
                 </li>
             </ul>
         </div>
-        <div class="md:w-1/3 justify-end flex items-center gap-6">
-            <button class="bg-blue-700 text-white px-5 py-2 rounded-xl hover:bg-blue-700"><a href="login.html">Masuk</a></button>
+        <div class="md:w-1/3 justify-end flex items-center gap-4">
+            <button class="hidden md:block bg-blue-700/50 text-white px-5 py-2 rounded-xl" onclick="window.location.href='/login'">
+                <p>Masuk</p>
+            </button>
+            <button class="flex md:hidden text-white p-2 items-center justify-center" onclick="window.location.href='/login'" disabled>
+                <i class="fas fa-user"></i>
+            </button>
             <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl text-white cursor-pointer lg:hidden"></ion-icon>
         </div>
 </header>

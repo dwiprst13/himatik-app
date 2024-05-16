@@ -29,6 +29,10 @@ class ArtikelModel extends Model
     {
         return $this->findAll();
     }
+    public function getAllArtikelByTag()
+    {
+        return $this->findAll();
+    }
     public function getLatestArtikel($limit = 2)
     {
         return $this->db->table('artikel')
@@ -41,6 +45,13 @@ class ArtikelModel extends Model
     {
         return $this->where('id_artikel', $id)->first();
     }
+    public function searchArtikel($keyword)
+    {
+        return $this->like('judul', $keyword)
+            ->orLike('tag', $keyword)
+            ->findAll();
+    }
+
     public function editArtikel($id, array $data)
     {
         return $this->update($id, $data);

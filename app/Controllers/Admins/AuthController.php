@@ -2,8 +2,9 @@
 
 namespace App\Controllers\Admins;
 
-use App\Controllers\ProtectedController;
-class AuthController extends ProtectedController
+use App\Controllers\ProtectedControllerAdmin;
+
+class AuthController extends ProtectedControllerAdmin
 {
     public function login()
     {

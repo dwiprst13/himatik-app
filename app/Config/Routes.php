@@ -1,6 +1,7 @@
 <?php
 
 use CodeIgniter\Router\RouteCollection;
+
 $routes->setAutoRoute(false);
 /**
  * @var RouteCollection $routes
@@ -13,7 +14,7 @@ $routes->get('/himatikadmin/login/lupapassword', 'LoginController::lupapassword'
 
 // Routes Untuk Dashboard
 $routes->get('/himatikadmin', 'Admins\DashboardController::index');
-$routes->get('/himatikadmin/dashboard', 'Admins\DashboardController::index'); 
+$routes->get('/himatikadmin/dashboard', 'Admins\DashboardController::index');
 
 // Routes Untuk Admin
 $routes->get('/himatikadmin/pengaturan', 'Admins\PengaturanController::getAllPengaturan');
@@ -48,7 +49,7 @@ $routes->post('/himatikadmin/galeri/editgaleri', 'Admins\GaleriController::updat
 $routes->get('/himatikadmin/galeri/deletegaleri/(:num)', 'Admins\GaleriController::deleteGaleri/$1');
 
 // Routes Untuk Artikel
-$routes->get('/himatikadmin/artikel', 'Admins\ArtikelController::getAllArtikel'); 
+$routes->get('/himatikadmin/artikel', 'Admins\ArtikelController::getAllArtikel');
 $routes->get('/himatikadmin/artikel/tambahartikel', 'Admins\ArtikelController::tambahArtikel');
 $routes->post('/himatikadmin/artikel/tambahartikel', 'Admins\ArtikelController::simpanArtikel');
 $routes->get('/himatikadmin/artikel/detailartikel/(:num)', 'Admins\ArtikelController::detailArtikel/$1');
@@ -84,31 +85,26 @@ $routes->post('/himatikadmin/proker/editproker', 'Admins\ProkerController::updat
 $routes->get('/himatikadmin/proker/editproker', 'Admins\ProkerController::updateProker');
 $routes->get('/himatikadmin/proker/deleteproker/(:num)', 'Admins\ProkerController::deleteProker/$1');
 
-// $routes->get('/himatikadmin/proker/tambahproker', 'AdminTambah::proker');
-// $routes->get('/himatikadmin/galeri/tambahgaleri', 'AdminTambah::galeri');
-// $routes->get('/himatikadmin/artikel/tambahartikel', 'AdminTambah::artikel');
-// $routes->get('/himatikadmin/info/tambahinfo', 'AdminTambah::info');
-
-// Routes Untuk Admin => Edit
-// $routes->post('/himatikadmin/admin/editadmin', 'Admins\AdminEdit::updateAdmin');
-// $routes->post('/himatikadmin/pengurus/editpengurus', 'Admins\PengurusController::updatePengurus');
-// $routes->get('/himatikadmin/pengurus/editpengurus/{id}', 'AdminEdit::pengurus');
-// $routes->get('/himatikadmin/proker/editproker/{id}', 'AdminEdit::proker');
-// $routes->get('/himatikadmin/galeri/editgaleri/{id}', 'AdminEdit::galeri');
-// $routes->get('/himatikadmin/artikel/editartikel/{id}', 'AdminEdit::artikel');
-// $routes->get('/himatikadmin/info/edditinfo/{id}', 'AdminEdit::info');
-
-// Routes Untuk Admin => Detail
-
-// Routes Untuk Admin => Detail
-// $routes->get('/himatikadmin/pengurus/detailpengurus/{id}', 'AdminDetail::pengurus');
-// $routes->get('/himatikadmin/galeri/detailgaleri/{id}', 'AdminDetail::galeri');
-// $routes->get('/himatikadmin/artikel/detailartikel/{id}', 'AdminDetail::artikel');
-// $routes->get('/himatikadmin/pesan/detailpesan/{id}', 'AdminDetail::pesan');
+// Routes Untuk User Auth
+$routes->get('/login', 'LoginController::userLogin');
+$routes->get('/login/lupapassword', 'LoginController::lupaPassword');
+$routes->post('/login', 'LoginController::auth');
+$routes->get('/register', 'Users\UserMain::register');
+$routes->get('/registerUser', 'Users\UserMain::userRegister');
+$routes->post('/logout', 'LoginController::logout');
 
 // Routes Untuk User 
+$routes->get('/login', 'LoginController::userLogin');
+$routes->get('/login/lupapassword', 'LoginController::lupaPassword');
+$routes->get('/register', 'Users\UserMain::register');
 $routes->get('/', 'Users\UserMain::index');
 $routes->get('/artikel', 'Users\UserMain::artikel');
+$routes->post('/searchPost', 'Users\UserMain::searchPost');
 $routes->get('/artikel/(:num)', 'Users\UserMain::detailArtikel/$1');
 $routes->get('/galeri', 'Users\UserMain::galeri');
 $routes->get('/kontak', 'Users\UserMain::kontak');
+$routes->get('/ruanghimatik', 'Users\UserMain::ruangHimatik');
+
+// Routes Untuk User Login
+$routes->post('/postComent', 'Users\UserMain::postComent');
+$routes->post('/postComent', 'Users\UserMain::postComent');

@@ -5,6 +5,17 @@
         </div>
         <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
             <form class="space-y-6" action="/registerUser" method="POST">
+                <?php
+                if (session()->getFlashdata('error')) {
+                ?>
+                    <div class="">
+                        <div class="flex text-white justify-center rounded-md w-[70%] bg-red-400 px-3 py-1 text-sm font-semibold leading-6 shadow-sm mx-auto">
+                            <?php echo session()->getFlashdata('error') ?>
+                        </div>
+                    </div>
+                <?php
+                }
+                ?>
                 <div>
                     <label for="nama" class="block text-sm font-medium leading-6 text-white">Nama</label>
                     <div class="mt-2">
@@ -33,10 +44,10 @@
                 </div>
                 <div>
                     <div class="flex items-center">
-                        <label for="password" class="block text-sm font-medium leading-6 text-white">Ulangi Kata Sandi</label>
+                        <label for="repassword" class="block text-sm font-medium leading-6 text-white">Ulangi Kata Sandi</label>
                     </div>
                     <div class="mt-2">
-                        <input id="password" name="password" type="password" autocomplete="current-password" required placeholder="Ulangi kata sandi" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        <input id="repassword" name="repassword" type="password" autocomplete="current-password" required placeholder="Ulangi kata sandi" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                     </div>
                 </div>
                 <div>

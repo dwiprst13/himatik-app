@@ -2,10 +2,10 @@
 
 namespace App\Controllers\Admins;
 
-use App\Controllers\ProtectedController;
+use App\Controllers\ProtectedControllerAdmin;
 use App\Models\GambarModel;
 
-class GambarController extends ProtectedController
+class GambarController extends ProtectedControllerAdmin
 {
     public function getAllGambar()
     {

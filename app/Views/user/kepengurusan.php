@@ -40,12 +40,12 @@
     <h3 class="text-[1.2rem] md:text-[1.3rem] lg:text-[1.5rem] font-bold text-center my-2 md:my-3 bg-gray-900 text-white rounded-xl p-2">Struktur Kepengurusan</h3>
     <div class="w-[100%] md:w-[90%] mx-auto flex flex-wrap justify-center my-5">
         <div class="w-4/12 md:w-[20%] p-2">
-            <button id="bphButton" class="default-style w-full bg-gray-400 focus:outline-none focus:ring focus:ring-transparent rounded-full p-2 text-white" onclick="filterData('BPH', this)">
+            <button id="bphButton" class="default-style w-full focus:outline-none focus:ring focus:ring-transparent rounded-full p-2 text-white" onclick="filterData('BPH', this)">
                 BPH
             </button>
         </div>
         <div class="w-4/12 md:w-[20%] p-2">
-            <button id="kominfoButton" class="default-style w-full focus:outline-none bg-gray-400 focus:ring focus:ring-transparent rounded-full p-2 text-white" onclick="filterData('Kominfo', this)">
+            <button id="kominfoButton" class="default-style w-full focus:outline-none focus:ring focus:ring-transparent rounded-full p-2 text-white" onclick="filterData('Kominfo', this)">
                 Kominfo
             </button>
         </div>

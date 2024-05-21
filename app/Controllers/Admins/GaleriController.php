@@ -2,10 +2,10 @@
 
 namespace App\Controllers\Admins;
 
-use App\Controllers\ProtectedController;
+use App\Controllers\ProtectedControllerAdmin;
 use App\Models\GaleriModel;
 
-class GaleriController extends ProtectedController
+class GaleriController extends ProtectedControllerAdmin
 {
     public function getAllgaleri()
     {

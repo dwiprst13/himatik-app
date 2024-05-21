@@ -2,10 +2,10 @@
 
 namespace App\Controllers\Admins;
 
-use App\Controllers\ProtectedController;
+use App\Controllers\ProtectedControllerAdmin;
 use App\Models\PengurusModel;
 
-class PengurusController extends ProtectedController
+class PengurusController extends ProtectedControllerAdmin
 {
     public function getAllPengurus()
     {

@@ -2,10 +2,10 @@
 
 namespace App\Controllers\Admins;
 
-use App\Controllers\ProtectedController;
+use App\Controllers\ProtectedControllerAdmin;
 use App\Models\InfoModel;
 
-class InfoController extends ProtectedController
+class InfoController extends ProtectedControllerAdmin
 {
     public function getAllInfo()
     {

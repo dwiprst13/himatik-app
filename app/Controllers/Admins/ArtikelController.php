@@ -3,10 +3,11 @@
 namespace App\Controllers\Admins;
 
 use App\Controllers\ProtectedController;
+use App\Controllers\ProtectedControllerAdmin;
 use App\Models\ArtikelModel;
 use App\Models\GambarModel;
 
-class ArtikelController extends ProtectedController
+class ArtikelController extends ProtectedControllerAdmin
 {
     public function getAllArtikel()
     {

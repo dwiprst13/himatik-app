@@ -4,7 +4,16 @@
             <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">Masuk dengan Akun Anda</h2>
         </div>
         <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-            <form class="space-y-6" action="/userlogin" method="POST">
+            <form class="space-y-6" action="/login" method="POST">
+                <?php
+                if (session()->getFlashdata('error')) {
+                ?>
+                    <div class="bg-red-600 text-white text-center rounded-md">
+                        <?php echo session()->getFlashdata('error') ?>
+                    </div>
+                <?php
+                }
+                ?>
                 <div>
                     <label for="namapengguna" class="block text-sm font-medium leading-6 text-white">Nama Pengguna</label>
                     <div class="mt-2">

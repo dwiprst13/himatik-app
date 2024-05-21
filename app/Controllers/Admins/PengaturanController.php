@@ -2,10 +2,10 @@
 
 namespace App\Controllers\Admins;
 
-use App\Controllers\ProtectedController;
+use App\Controllers\ProtectedControllerAdmin;
 use App\Models\PengaturanModel;
 
-class PengaturanController extends ProtectedController
+class PengaturanController extends ProtectedControllerAdmin
 {
     public function getAllPengaturan()
     {

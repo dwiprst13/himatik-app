@@ -3,9 +3,10 @@
 namespace App\Controllers\Admins;
 
 use App\Controllers\ProtectedController;
+use App\Controllers\ProtectedControllerAdmin;
 use App\Models\AdminModel;
 
-class AdminController extends ProtectedController
+class AdminController extends ProtectedControllerAdmin
 {
     public function getAllAdmin()
     {

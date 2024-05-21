@@ -7,7 +7,7 @@ $routes->setAutoRoute(false);
  * @var RouteCollection $routes
  */
 // Routes Untuk Auth
-$routes->get('/himatikadmin/login', 'LoginController::index');
+$routes->get('/himatikadmin/login', 'LoginController::adminLogin');
 $routes->post('/himatikadmin/login', 'LoginController::auth');
 $routes->post('/himatikadmin/logout', 'LoginController::logout');
 $routes->get('/himatikadmin/login/lupapassword', 'LoginController::lupapassword');
@@ -88,15 +88,12 @@ $routes->get('/himatikadmin/proker/deleteproker/(:num)', 'Admins\ProkerControlle
 // Routes Untuk User Auth
 $routes->get('/login', 'LoginController::userLogin');
 $routes->get('/login/lupapassword', 'LoginController::lupaPassword');
-$routes->post('/login', 'LoginController::auth');
-$routes->get('/register', 'Users\UserMain::register');
-$routes->get('/registerUser', 'Users\UserMain::userRegister');
-$routes->post('/logout', 'LoginController::logout');
+$routes->post('/login', 'LoginController::userAuth');
+$routes->get('/register', 'LoginController::register');
+$routes->post('/registerUser', 'LoginController::userRegister');
+$routes->post('/logoutUser', 'LoginController::logoutUser');
 
 // Routes Untuk User 
-$routes->get('/login', 'LoginController::userLogin');
-$routes->get('/login/lupapassword', 'LoginController::lupaPassword');
-$routes->get('/register', 'Users\UserMain::register');
 $routes->get('/', 'Users\UserMain::index');
 $routes->get('/artikel', 'Users\UserMain::artikel');
 $routes->post('/searchPost', 'Users\UserMain::searchPost');
@@ -106,5 +103,6 @@ $routes->get('/kontak', 'Users\UserMain::kontak');
 $routes->get('/ruanghimatik', 'Users\UserMain::ruangHimatik');
 
 // Routes Untuk User Login
-$routes->post('/postComent', 'Users\UserMain::postComent');
-$routes->post('/postComent', 'Users\UserMain::postComent');
+$routes->post('/postComent', 'Users\KomentarController::saveKomentar');
+$routes->get('/postComent', 'Users\KomentarController::saveKomentar');
+// $routes->post('/postComent', 'Users\UserMain::postComent');

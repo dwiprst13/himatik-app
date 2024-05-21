@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1715894922;_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:5:{s:4:"nama";s:2:"as";s:12:"namapengguna";s:3:"asd";s:5:"email";s:6:"asd@sf";s:8:"password";s:4:"1212";s:10:"repassword";s:4:"1212";}}__ci_vars|a:2:{s:13:"_ci_old_input";s:3:"new";s:5:"error";s:3:"new";}error|s:47:"Password harus terdiri dari minimal 6 karakter.";

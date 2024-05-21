@@ -9,7 +9,6 @@ class KomentarModel extends Model
     protected $table = "komentar";
     protected $primaryKey = "id_komentar";
     protected $allowedFields = ["id_komentar", "id_artikel", "id_user", "komentar", "date_posted", "parent_comment_id", "status"];
-    protected $useTimestamps = true;
 
     public function countTotalKomentar()
     {
@@ -18,5 +17,9 @@ class KomentarModel extends Model
     public function getAllKomentar()
     {
         return $this->findAll();
+    }
+    public function getKomentarByIdArtikel($id_artikel)
+    {
+        return $this->where('id_artikel', $id_artikel)->orderBy('date_posted', 'DESC')->findAll();
     }
 }

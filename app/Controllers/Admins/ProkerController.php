@@ -2,10 +2,10 @@
 
 namespace App\Controllers\Admins;
 
-use App\Controllers\ProtectedController;
+use App\Controllers\ProtectedControllerAdmin;
 use App\Models\ProkerModel;
 
-class ProkerController extends ProtectedController
+class ProkerController extends ProtectedControllerAdmin
 {
     public function getAllProker()
     {

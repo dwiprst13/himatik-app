@@ -3,12 +3,13 @@
 namespace App\Controllers\Admins;
 
 use App\Controllers\ProtectedController;
+use App\Controllers\ProtectedControllerAdmin;
 use App\Models\AdminModel;
 use App\Models\ArtikelModel;
 use App\Models\GaleriModel;
 use App\Models\PengurusModel;
 
-class DAshboardController extends ProtectedController
+class DAshboardController extends ProtectedControllerAdmin
 {
     public function index()
     {

@@ -1,0 +1,921 @@
+INFO - 2024-05-17 00:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 11:12:11 --> ErrorException: Undefined array key "user"
+in APPPATH\Controllers\LoginController.php on line 142.
+ 1 APPPATH\Controllers\LoginController.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'C:\\xampp\\htdocs\\himatik-app\\app\\Controllers\\LoginController.php', 142)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LoginController->userAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 11:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 11:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-17 12:13:05 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 C:\xampp\htdocs\himatik-app\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 C:\xampp\htdocs\himatik-app\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\himatik-app\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\himatik-app\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\himatik-app\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\himatik-app\app\Controllers\Users\KomentarController.php(26): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+#10 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+#11 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\himatik-app\public\index.php(81): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\himatik-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-05-17 12:13:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`komentar`, `created_at`, `updated_at`) VALUES (:komentar:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Users\KomentarController.php(26): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:13:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`komentar`, `created_at`, `updated_at`) VALUES (\'asdasasd\', \'2024-05-17 12:13:05\', \'2024-05-17 12:13:05\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`komentar`, `created_at`, `updated_at`) VALUES (\'asdasasd\', \'2024-05-17 12:13:05\', \'2024-05-17 12:13:05\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`komentar`, `created_at`, `updated_at`) VALUES (:komentar:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Users\KomentarController.php(26): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:13:05 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `komentar` (`komentar`, `created_at`, `updated_at`) VALUES (\'asdasasd\', \'2024-05-17 12:13:05\', \'2024-05-17 12:13:05\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`komentar`, `created_at`, `updated_at`) VALUES (\'asdasasd\', \'2024-05-17 12:13:05\', \'2024-05-17 12:13:05\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`komentar`, `created_at`, `updated_at`) VALUES (\'asdasasd\', \'2024-05-17 12:13:05\', \'2024-05-17 12:13:05\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`komentar`, `created_at`, `updated_at`) VALUES (:komentar:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Users\KomentarController.php(26): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 12:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-17 12:14:58 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 C:\xampp\htdocs\himatik-app\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 C:\xampp\htdocs\himatik-app\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\himatik-app\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\himatik-app\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\himatik-app\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\himatik-app\app\Controllers\Users\KomentarController.php(26): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+#10 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+#11 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\himatik-app\public\index.php(81): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\himatik-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-05-17 12:14:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`komentar`, `created_at`, `updated_at`) VALUES (:komentar:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Users\KomentarController.php(26): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:14:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`komentar`, `created_at`, `updated_at`) VALUES (\'asd\', \'2024-05-17 12:14:58\', \'2024-05-17 12:14:58\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`komentar`, `created_at`, `updated_at`) VALUES (\'asd\', \'2024-05-17 12:14:58\', \'2024-05-17 12:14:58\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`komentar`, `created_at`, `updated_at`) VALUES (:komentar:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Users\KomentarController.php(26): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:14:58 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `komentar` (`komentar`, `created_at`, `updated_at`) VALUES (\'asd\', \'2024-05-17 12:14:58\', \'2024-05-17 12:14:58\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`komentar`, `created_at`, `updated_at`) VALUES (\'asd\', \'2024-05-17 12:14:58\', \'2024-05-17 12:14:58\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`komentar`, `created_at`, `updated_at`) VALUES (\'asd\', \'2024-05-17 12:14:58\', \'2024-05-17 12:14:58\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`komentar`, `created_at`, `updated_at`) VALUES (:komentar:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Users\KomentarController.php(26): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 12:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-17 12:17:42 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`himatik_db`.`komentar`, CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_artikel`) REFERENCES `artikel` (`id_artikel`)) in C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 C:\xampp\htdocs\himatik-app\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 C:\xampp\htdocs\himatik-app\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\himatik-app\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\himatik-app\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\himatik-app\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\himatik-app\app\Controllers\Users\KomentarController.php(26): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+#10 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+#11 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\himatik-app\public\index.php(81): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\himatik-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-05-17 12:17:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`himatik_db`.`komentar`, CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_artikel`) REFERENCES `artikel` (`id_artikel`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`komentar`) VALUES (:komentar:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Users\KomentarController.php(26): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:17:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`himatik_db`.`komentar`, CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_artikel`) REFERENCES `artikel` (`id_artikel`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`komentar`) VALUES (\'asdas\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`komentar`) VALUES (\'asdas\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`komentar`) VALUES (:komentar:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Users\KomentarController.php(26): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:17:42 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`himatik_db`.`komentar`, CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_artikel`) REFERENCES `artikel` (`id_artikel`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `komentar` (`komentar`) VALUES (\'asdas\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`komentar`) VALUES (\'asdas\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`komentar`) VALUES (\'asdas\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`komentar`) VALUES (:komentar:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Users\KomentarController.php(26): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 12:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 12:30:48 --> ParseError: syntax error, unexpected token ";"
+in APPPATH\Controllers\Users\KomentarController.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\himatik-app\\app\\Controllers\\Users\\KomentarController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Users\\KomentarController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Users\\KomentarController')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Users\\KomentarController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 12:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-17 12:32:11 --> mysqli_sql_exception: Column 'id_artikel' cannot be null in C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 C:\xampp\htdocs\himatik-app\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 C:\xampp\htdocs\himatik-app\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\himatik-app\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\himatik-app\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\himatik-app\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\himatik-app\app\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+#10 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+#11 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\himatik-app\public\index.php(81): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\himatik-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-05-17 12:32:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:32:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdasasf\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdasasf\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:32:11 --> [Caused by] mysqli_sql_exception: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdasasf\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdasasf\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdasasf\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 12:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-17 12:33:52 --> mysqli_sql_exception: Column 'id_artikel' cannot be null in C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 C:\xampp\htdocs\himatik-app\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 C:\xampp\htdocs\himatik-app\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\himatik-app\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\himatik-app\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\himatik-app\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\himatik-app\app\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+#10 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+#11 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\himatik-app\public\index.php(81): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\himatik-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-05-17 12:33:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:33:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdasasfasd\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdasasfasd\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:33:52 --> [Caused by] mysqli_sql_exception: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdasasfasd\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdasasfasd\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdasasfasd\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 12:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-17 12:35:10 --> mysqli_sql_exception: Column 'id_artikel' cannot be null in C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 C:\xampp\htdocs\himatik-app\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 C:\xampp\htdocs\himatik-app\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\himatik-app\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\himatik-app\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\himatik-app\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\himatik-app\app\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+#10 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+#11 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\himatik-app\public\index.php(81): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\himatik-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-05-17 12:35:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:35:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdasasfasdasd\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdasasfasdasd\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:35:10 --> [Caused by] mysqli_sql_exception: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdasasfasdasd\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdasasfasdasd\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdasasfasdasd\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 12:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-17 12:46:34 --> mysqli_sql_exception: Column 'id_artikel' cannot be null in C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 C:\xampp\htdocs\himatik-app\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 C:\xampp\htdocs\himatik-app\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\himatik-app\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\himatik-app\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\himatik-app\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\himatik-app\app\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+#10 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+#11 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\himatik-app\public\index.php(81): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\himatik-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-05-17 12:46:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:46:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdaWA\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdaWA\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:46:34 --> [Caused by] mysqli_sql_exception: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdaWA\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdaWA\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdaWA\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 12:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-17 12:47:02 --> mysqli_sql_exception: Column 'id_artikel' cannot be null in C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 C:\xampp\htdocs\himatik-app\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 C:\xampp\htdocs\himatik-app\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\himatik-app\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\himatik-app\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\himatik-app\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\himatik-app\app\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+#10 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+#11 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\himatik-app\public\index.php(81): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\himatik-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-05-17 12:47:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:47:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdaWAawedd\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdaWAawedd\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:47:02 --> [Caused by] mysqli_sql_exception: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdaWAawedd\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdaWAawedd\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'asdaWAawedd\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 12:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-17 12:47:13 --> mysqli_sql_exception: Column 'id_artikel' cannot be null in C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\himatik-app\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 C:\xampp\htdocs\himatik-app\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 C:\xampp\htdocs\himatik-app\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 C:\xampp\htdocs\himatik-app\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\himatik-app\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\himatik-app\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\himatik-app\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\himatik-app\app\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+#10 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+#11 C:\xampp\htdocs\himatik-app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\himatik-app\public\index.php(81): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\himatik-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-05-17 12:47:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:47:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'sadfaws\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'sadfaws\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 12:47:13 --> [Caused by] mysqli_sql_exception: Column 'id_artikel' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'sadfaws\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'sadfaws\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (NULL, NULL, \'sadfaws\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `komentar` (`id_artikel`, `id_user`, `komentar`) VALUES (:id_artikel:, :id_user:, :komentar:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Users\KomentarController.php(30): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\KomentarController->saveKomentar()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\KomentarController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 12:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 12:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 13:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 13:00:01 --> ErrorException: Undefined variable $komentarByArtikel
+in APPPATH\Views\user\artikel\artikel_detail.php on line 53.
+ 1 APPPATH\Views\user\artikel\artikel_detail.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $komentarByArtikel', 'C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/artikel/artikel_detail', [], true)
+ 5 APPPATH\Controllers\Users\UserMain.php(84): view('user/artikel/artikel_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 13:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 13:00:50 --> ErrorException: Undefined variable $komentarByArtikel
+in APPPATH\Views\user\artikel\artikel_detail.php on line 53.
+ 1 APPPATH\Views\user\artikel\artikel_detail.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $komentarByArtikel', 'C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/artikel/artikel_detail', [], true)
+ 5 APPPATH\Controllers\Users\UserMain.php(84): view('user/artikel/artikel_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 13:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 13:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 13:01:41 --> ErrorException: Cannot use empty array elements in arrays
+in APPPATH\Views\user\artikel\artikel_detail.php on line 53.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-05-17 13:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 13:02:01 --> ErrorException: Undefined variable $komentarByArtikel
+in APPPATH\Views\user\artikel\artikel_detail.php on line 53.
+ 1 APPPATH\Views\user\artikel\artikel_detail.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $komentarByArtikel', 'C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/artikel/artikel_detail', [], true)
+ 5 APPPATH\Controllers\Users\UserMain.php(84): view('user/artikel/artikel_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 13:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 13:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 13:04:37 --> ErrorException: Undefined variable $getAllKomentar
+in APPPATH\Views\user\artikel\artikel_detail.php on line 53.
+ 1 APPPATH\Views\user\artikel\artikel_detail.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getAllKomentar', 'C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/artikel/artikel_detail', [], true)
+ 5 APPPATH\Controllers\Users\UserMain.php(84): view('user/artikel/artikel_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 13:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 13:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 13:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 13:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 13:15:51 --> ErrorException: Undefined variable $getAllKomentar
+in APPPATH\Views\user\artikel\artikel_detail.php on line 53.
+ 1 APPPATH\Views\user\artikel\artikel_detail.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getAllKomentar', 'C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/artikel/artikel_detail', [], true)
+ 5 APPPATH\Controllers\Users\UserMain.php(84): view('user/artikel/artikel_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 13:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 13:17:20 --> ErrorException: Undefined variable $getAllKomentar
+in APPPATH\Views\user\artikel\artikel_detail.php on line 54.
+ 1 APPPATH\Views\user\artikel\artikel_detail.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getAllKomentar', 'C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/artikel/artikel_detail', [], true)
+ 5 APPPATH\Controllers\Users\UserMain.php(84): view('user/artikel/artikel_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 13:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 13:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 13:21:49 --> ErrorException: Undefined variable $getAllKomentar
+in APPPATH\Views\user\artikel\artikel_detail.php on line 54.
+ 1 APPPATH\Views\user\artikel\artikel_detail.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getAllKomentar', 'C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/artikel/artikel_detail', [], true)
+ 5 APPPATH\Controllers\Users\UserMain.php(84): view('user/artikel/artikel_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 13:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 13:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 22:38:31 --> ErrorException: Undefined array key "id_user"
+in APPPATH\Views\user\artikel\artikel_detail.php on line 53.
+ 1 APPPATH\Views\user\artikel\artikel_detail.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/artikel/artikel_detail', [], true)
+ 5 APPPATH\Controllers\Users\UserMain.php(84): view('user/artikel/artikel_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 22:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 22:38:52 --> ErrorException: Undefined array key "id_user"
+in APPPATH\Views\user\artikel\artikel_detail.php on line 53.
+ 1 APPPATH\Views\user\artikel\artikel_detail.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/artikel/artikel_detail', [], true)
+ 5 APPPATH\Controllers\Users\UserMain.php(84): view('user/artikel/artikel_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 22:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 22:54:28 --> ErrorException: Undefined array key "nama"
+in APPPATH\Views\user\artikel\artikel_detail.php on line 78.
+ 1 APPPATH\Views\user\artikel\artikel_detail.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php', 78)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/artikel/artikel_detail', [], true)
+ 5 APPPATH\Controllers\Users\UserMain.php(84): view('user/artikel/artikel_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 22:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 22:54:48 --> ErrorException: Undefined array key "nama"
+in APPPATH\Views\user\artikel\artikel_detail.php on line 78.
+ 1 APPPATH\Views\user\artikel\artikel_detail.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php', 78)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/artikel/artikel_detail', [], true)
+ 5 APPPATH\Controllers\Users\UserMain.php(84): view('user/artikel/artikel_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 22:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 22:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 23:14:04 --> BadMethodCallException: Call to undefined method App\Models\KomentarModel::getKomentarByIdArtikel
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Users\UserMain.php(81): CodeIgniter\Model->__call('getKomentarByIdArtikel', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 23:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 23:27:33 --> ErrorException: Undefined array key "user_id"
+in APPPATH\Controllers\Users\UserMain.php on line 81.
+ 1 APPPATH\Controllers\Users\UserMain.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'C:\\xampp\\htdocs\\himatik-app\\app\\Controllers\\Users\\UserMain.php', 81)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+CRITICAL - 2024-05-17 23:29:29 --> BadMethodCallException: Call to undefined method App\Models\KomentarModel::getKomentarByIdArtikel
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Users\UserMain.php(81): CodeIgniter\Model->__call('getKomentarByIdArtikel', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 23:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 23:30:41 --> ErrorException: Undefined variable $searchPost
+in APPPATH\Views\user\artikel\artikel_detail.php on line 70.
+ 1 APPPATH\Views\user\artikel\artikel_detail.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $searchPost', 'C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php', 70)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\himatik-app\\app\\Views\\user\\artikel\\artikel_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/artikel/artikel_detail', [], true)
+ 5 APPPATH\Controllers\Users\UserMain.php(85): view('user/artikel/artikel_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 23:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 23:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 23:53:23 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Users\UserMain.php on line 84.
+ 1 APPPATH\Controllers\Users\UserMain.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\himatik-app\\app\\Controllers\\Users\\UserMain.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 23:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 23:53:38 --> ErrorException: Undefined variable $getUserKomentar
+in APPPATH\Controllers\Users\UserMain.php on line 92.
+ 1 APPPATH\Controllers\Users\UserMain.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getUserKomentar', 'C:\\xampp\\htdocs\\himatik-app\\app\\Controllers\\Users\\UserMain.php', 92)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 23:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 23:53:39 --> ErrorException: Undefined variable $getUserKomentar
+in APPPATH\Controllers\Users\UserMain.php on line 92.
+ 1 APPPATH\Controllers\Users\UserMain.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getUserKomentar', 'C:\\xampp\\htdocs\\himatik-app\\app\\Controllers\\Users\\UserMain.php', 92)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Users\UserMain->detailArtikel('5')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\UserMain))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\himatik-app\\public\\index.php')
+INFO - 2024-05-17 23:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

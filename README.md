@@ -1,4 +1,4 @@
-# GASIN WIRRRRR!!!!!!!
+
 ## CodeIgniter4, Tailwindcss and MySql
 
 CodeIgniter 4
